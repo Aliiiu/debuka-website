@@ -17,6 +17,8 @@ const config: Config = {
 				primary: '#518A79',
 				'grey-100': '#F3F5F6',
 				'grey-200': '#E1E6ED',
+				'grey-300': '#C8D2DF',
+				'grey-800': '#313C49',
 				'grey-900': '#1F2126',
 				'body-alt': '#5F738C',
 			},
