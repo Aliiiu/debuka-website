@@ -1,8 +1,6 @@
 import Call from '@/assets/icons/call';
 import Check from '@/assets/icons/check';
-import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
 const Orderings = () => {
 	return (

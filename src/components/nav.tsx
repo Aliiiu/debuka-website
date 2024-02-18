@@ -2,7 +2,7 @@
 
 import Menu from '@/assets/icons/menu';
 import { Transition } from '@headlessui/react';
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import MenuDrawer from './menuDrawer';
 import WaitlistModal from './waitlistModal';
 
