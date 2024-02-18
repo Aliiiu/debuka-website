@@ -1,9 +1,7 @@
 'use client';
 
-import { Close } from '@/assets/icons/close';
 import Menu from '@/assets/icons/menu';
 import { Transition } from '@headlessui/react';
-import Link from 'next/link';
 import { Fragment, useEffect, useState } from 'react';
 import MenuDrawer from './menuDrawer';
 import WaitlistModal from './waitlistModal';
@@ -22,16 +20,18 @@ export const Navbar = () => {
 	}
 
 	return (
-		<nav className='container sticky bg-black top-0 py-6 flex justify-between items-center'>
-			<button
-				onClick={() => {
-					openMenu();
-				}}
-				className='cursor-pointer'
-			>
-				<Menu />
-			</button>
-			<WaitlistModal />
+		<nav className='sticky bg-black top-0'>
+			<div className='container py-6 flex justify-between items-center'>
+				<button
+					onClick={() => {
+						openMenu();
+					}}
+					className='cursor-pointer'
+				>
+					<Menu />
+				</button>
+				<WaitlistModal />
+			</div>
 			<Transition
 				show={isOpen}
 				enter='ease-out duration-300'

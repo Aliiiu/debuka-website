@@ -17,7 +17,7 @@ const StarterMenu = () => {
 					<div className='bg-white py-10 px-[32px] md:px-[64px] xl:px-[92px] flex flex-col items-center rounded-[20px]'>
 						<div className='w-[227px] xl:w-[332px] h-[346px] xl:h-[507px]'>
 							<Image
-								src={'/images/food-1.png'}
+								src={'/images/food-1.webp'}
 								alt='food-1'
 								width={332}
 								height={507}
@@ -31,7 +31,7 @@ const StarterMenu = () => {
 					<div className='bg-white py-10 px-[32px] md:px-[64px] xl:px-[92px] flex flex-col items-center rounded-[20px]'>
 						<div className='w-[227px] xl:w-[332px] h-[346px] xl:h-[507px]'>
 							<Image
-								src={'/images/food-2.png'}
+								src={'/images/food-2.webp'}
 								alt='food-1'
 								width={332}
 								height={507}
