@@ -4,7 +4,10 @@ import Style from '@/assets/icons/style';
 
 const Motto = () => {
 	return (
-		<section className='py-[150px] container flex justify-center bg-motto bg-no-repeat bg-cover'>
+		<section
+			id='our-promises'
+			className='py-[150px] container flex justify-center bg-motto bg-no-repeat bg-cover'
+		>
 			<div className='grid md:grid-cols-3 bg-white'>
 				<div className='px-[30px] min-h-[327px] py-8 bg-[#EBFFF1] text-body-alt flex flex-col gap-5'>
 					<Eye />

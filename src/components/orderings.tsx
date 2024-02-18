@@ -6,9 +6,12 @@ import React from 'react';
 
 const Orderings = () => {
 	return (
-		<section className='grid md:grid-cols-2 w-full bg-white text-body-alt max-w-[1440px] mx-auto'>
+		<section
+			id='reservations'
+			className='grid md:grid-cols-2 w-full bg-white text-body-alt max-w-[1440px] mx-auto'
+		>
 			<div className='flex flex-col py-16 items-center justify-center'>
-				<div className='flex flex-col gap-10'>
+				<div className='flex flex-col gap-10 px-10'>
 					<div>
 						<h2 className='text-3xl xl:text-4xl text-primary-dark font-dms-serif'>
 							Orderings
@@ -69,9 +72,7 @@ const Orderings = () => {
 					</div>
 				</div>
 			</div>
-			<div className='relative w-full h-[450px] md:h-[900px]'>
-				<Image src={'/images/resturant-2.png'} alt='resturant-2' fill />
-			</div>
+			<div className='w-full h-[450px] md:h-[700px] xl:h-[900px] bg-resturant-2 bg-no-repeat bg-cover'></div>
 		</section>
 	);
 };

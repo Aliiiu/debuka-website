@@ -3,10 +3,6 @@ import Hero from '@/components/hero';
 import StarterMenu from '@/components/starter-menu';
 import Orderings from '@/components/orderings';
 import Motto from '@/components/motto';
-import Hearts from '@/assets/icons/hearts';
-import Message from '@/assets/icons/message';
-import Zap from '@/assets/icons/zap';
-import Building from '@/assets/icons/building';
 import Culture from '@/components/culture';
 import Fundamentals from '@/components/fundamentals';
 

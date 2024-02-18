@@ -24,6 +24,11 @@ const config: Config = {
 			},
 			backgroundImage: {
 				resturant: "url('/images/bg-1.png')",
+				masked: "url('/images/masked-bg.png')",
+				'masked-full': "url('/images/masked-full.png')",
+				'masked-full-base': "url('/images/masked-full-base.png')",
+				'masked-base': "url('/images/masked-bg-base.png')",
+				'resturant-2': "url('/images/resturant-2.png')",
 				motto: "url('/images/bg-2.png')",
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':
