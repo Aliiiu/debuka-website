@@ -5,7 +5,10 @@ import Zap from '@/assets/icons/zap';
 
 const Culture = () => {
 	return (
-		<section className='py-[90px] bg-black container flex flex-col items-center justify-center bg-motto bg-no-repeat bg-cover'>
+		<section
+			id='values'
+			className='py-[90px] bg-black container flex flex-col items-center justify-center bg-motto bg-no-repeat bg-cover'
+		>
 			<h2 className='text-4xl font-dms-serif text-white mb-10'>
 				Guiding Culture
 			</h2>

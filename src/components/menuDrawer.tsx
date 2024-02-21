@@ -31,14 +31,14 @@ const MenuDrawer = React.forwardRef<HTMLDivElement, MenuDrawerProps>(
 								className='hover:underline transition-all delay-300'
 								onClick={() => closeMenu()}
 							>
-								Our Dishes
+								Starters Menu
 							</Link>
 							<Link
 								href={'#reservations'}
 								className='hover:underline transition-all delay-300'
 								onClick={() => closeMenu()}
 							>
-								Reservations
+								Orderings
 							</Link>
 							<Link
 								href={'#our-promises'}

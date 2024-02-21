@@ -4,6 +4,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import Footer from '@/components/footer';
 import { Navbar } from '@/components/nav';
+import Head from 'next/head';
 
 const dmSans = DM_Sans({ subsets: ['latin'] });
 

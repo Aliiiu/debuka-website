@@ -5,7 +5,7 @@ import Style from '@/assets/icons/style';
 const Motto = () => {
 	return (
 		<section
-			id='our-promises'
+			id=''
 			className='py-[150px] container flex justify-center bg-motto bg-no-repeat bg-cover'
 		>
 			<div className='grid md:grid-cols-3 bg-white'>
