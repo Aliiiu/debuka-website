@@ -14,32 +14,32 @@ const StarterMenu = () => {
 					</p>
 				</div>
 				<div className='grid w-full md:w-fit md:grid-cols-2 mt-7 md:mt-24 gap-[30px]'>
-					<div className='bg-white py-10 px-[32px] md:px-[64px] xl:px-[92px] flex flex-col items-center rounded-[20px]'>
-						<div className='w-[227px] xl:w-[332px] h-[346px] xl:h-[507px]'>
+					<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex flex-col items-center rounded-[20px]'>
+						<div className='w-[227px] xl:w-[393px] h-[346px] xl:h-[490px]'>
 							<Image
 								src={'/images/food-1.webp'}
 								alt='food-1'
-								width={332}
-								height={507}
+								width={393}
+								height={490}
 								className='object-contain h-auto max-w-full'
 							/>
 						</div>
 						<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-							Roasted Plantain Bowl
+							Stuffed Bòlì Boat with Red Tilapia
 						</span>
 					</div>
-					<div className='bg-white py-10 px-[32px] md:px-[64px] xl:px-[92px] flex flex-col items-center rounded-[20px]'>
-						<div className='w-[227px] xl:w-[332px] h-[346px] xl:h-[507px]'>
+					<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex flex-col items-center rounded-[20px]'>
+						<div className='w-[227px] xl:w-[386px] h-[346px] xl:h-[490px]'>
 							<Image
 								src={'/images/food-2.webp'}
 								alt='food-1'
-								width={332}
-								height={507}
-								className='object-contain h-auto max-w-full'
+								width={386}
+								height={490}
+								className='object-contain h-fit max-w-full'
 							/>
 						</div>
 						<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-							Roasted Plantain Boat with Paddle
+							Stuffed Dùndú Roll with Turkey Tail
 						</span>
 					</div>
 				</div>

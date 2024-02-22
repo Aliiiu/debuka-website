@@ -40,7 +40,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className='flex flex-col md:flex-row gap-2 justify-between text-sm md:text-base border-t text-body-alt border-grey-900 py-[30px]'>
-				<span>Copyright 2024 | All rights reserved</span>
+				<span>Copyright {new Date().getFullYear()} | All rights reserved</span>
 				<div className='flex items-center gap-8'>
 					<span>Terms of service</span>
 					<span>Privacy policy</span>

@@ -1,48 +1,54 @@
+'use client';
+
+import { whatWeAre } from '@/assets/constants/whatWeAre';
 import Eye from '@/assets/icons/eye';
 import Mision from '@/assets/icons/mission';
 import Style from '@/assets/icons/style';
+import { useState, useEffect } from 'react';
 
 const Motto = () => {
+	// State to track the index of the currently hovered card
+	const [hoveredIndex, setHoveredIndex] = useState(0);
+
+	// Set the hover state to the first element by default
+	useEffect(() => {
+		setHoveredIndex(0);
+	}, []);
+
 	return (
 		<section
 			id=''
 			className='py-[150px] container flex justify-center bg-motto bg-no-repeat bg-cover'
 		>
 			<div className='grid md:grid-cols-3 bg-white'>
-				<div className='px-[30px] min-h-[327px] py-8 bg-[#EBFFF1] text-body-alt flex flex-col gap-5'>
-					<Eye />
-					<h2 className='text-primary-dark font-dms-serif text-[28px] leading-none'>
-						Vision
-					</h2>
-					<p className='max-w-[240px] leading-tight'>
-						deBuka’s mission is to make Nigerian cuisines known globally,
-						uniquely.
-					</p>
-				</div>
-				<div className='px-[30px] min-h-[327px] py-8 border-none bg-white text-body-alt flex flex-col gap-5'>
-					<Mision />
-					<h2 className='text-primary-dark font-dms-serif text-[28px] leading-none'>
-						Mission
-					</h2>
-					<p className='max-w-[294px] leading-tight'>
-						Our mission is to curate dining experiences – that are authentic,
-						inclusive, creative, incomparable and exceptional – with ingredients
-						primarily from Nigeria but integrated with those from all over the
-						world.
-					</p>
-				</div>
-				<div className='px-[30px] min-h-[327px] py-8 bg-white text-body-alt flex flex-col gap-5'>
-					<Style />
-					<h2 className='text-primary-dark font-dms-serif text-[28px] leading-none'>
-						Style
-					</h2>
-					<p className='max-w-[294px] leading-tight'>
-						Our style is an elevated fine-dining style, done differently
-						contrary to conventional norms. It delivers healthy and quality
-						menus in an amiable calming ambience - providing unparalleled
-						experiences away from home.
-					</p>
-				</div>
+				{whatWeAre.map(({ title, content }, index) => (
+					<div
+						key={title}
+						onMouseEnter={() => setHoveredIndex(index)}
+						onMouseLeave={() => setHoveredIndex(0)}
+						className={`px-[30px] min-h-[327px] min-w-[358px] py-8 active:bg-[#EBFFF1] cursor-pointer hover:bg-[#EBFFF1] text-body-alt flex flex-col gap-5 ${
+							hoveredIndex === index ? 'bg-[#EBFFF1]' : 'hover:bg-[#EBFFF1]'
+						}`}
+					>
+						{title === 'Vision' ? (
+							<Eye />
+						) : title === 'Mission' ? (
+							<Mision />
+						) : (
+							<Style />
+						)}
+						<h2 className='text-primary-dark font-dms-serif text-[28px] leading-none'>
+							{title}
+						</h2>
+						<p
+							className={`${
+								title === 'Vision' ? 'max-w-[240px]' : 'max-w-[294px]'
+							}  leading-tight`}
+						>
+							{content}
+						</p>
+					</div>
+				))}
 			</div>
 		</section>
 	);
