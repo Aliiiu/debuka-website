@@ -14,10 +14,10 @@ const StarterMenu = () => {
 						year, we are opening access to our starter menu at $35:
 					</p>
 				</div>
-				<AppCarousel>
-					<div className='flex mt-7 md:mt-24 gap-[30px]'>
-						<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex-[0_0_100%] flex flex-col items-center rounded-[20px]'>
-							<div className='w-[227px] xl:w-[393px] h-[346px] xl:h-[490px]'>
+				<AppCarousel classNames='max-w-[320px] md:max-w-[500px]'>
+					<div className='flex mt-7 md:mt-24'>
+						<div className='min-w-0 flex-[0_0_100%] bg-white py-10 xl:px-10 flex flex-col items-center rounded-[20px]'>
+							<div className='w-[227px] xl:w-[393px] md:h-[346px] xl:h-[490px]'>
 								<Image
 									src={'/images/food-1.webp'}
 									alt='food-1'
@@ -30,8 +30,8 @@ const StarterMenu = () => {
 								Stuffed Bòlì Boat with Red Tilapia
 							</span>
 						</div>
-						<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex-[0_0_100%] flex flex-col items-center rounded-[20px]'>
-							<div className='w-[227px] xl:w-[386px] h-[346px] xl:h-[490px]'>
+						<div className='min-w-0 flex-[0_0_100%] bg-white py-10 xl:px-10 flex flex-col items-center rounded-[20px]'>
+							<div className='w-[227px] xl:w-[386px] md:h-[346px] xl:h-[490px]'>
 								<Image
 									src={'/images/food-2.webp'}
 									alt='food-1'

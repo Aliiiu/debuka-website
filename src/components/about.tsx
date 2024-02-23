@@ -1,7 +1,6 @@
 const About = () => {
 	return (
-		<section id='about' className='bg-black w-full'>
-			<div className='-mt-[100px] md:-mt-[250px] xl:-mt-[350px] w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]' />
+		<section id='about' className='bg-black w-full pt-16 md:pt-0'>
 			<div className='container px-0 bg-cover bg-no-repeat bg-resturant'>
 				<div className='flex justify-center h-[680px] md:h-[900px] px-7 w-full bg-gradient-to-b from-black to-transparent'>
 					<div className='max-w-[708px] text-white text-center'>

@@ -20,7 +20,7 @@ export const Navbar = () => {
 	}
 
 	return (
-		<nav className='sticky bg-black top-0'>
+		<nav className='sticky bg-black top-0 z-50'>
 			<div className='container py-6 flex justify-between items-center'>
 				<button
 					onClick={() => {

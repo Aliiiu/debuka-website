@@ -42,7 +42,7 @@ const AppCarousel = ({
 		emblaApi.on('select', onSelect);
 	}, [emblaApi, onInit, onSelect]);
 	return (
-		<>
+		<div className={cn('max-w-[500px] mx-auto', classNames)}>
 			{data && (
 				<div className='w-fit overflow-hidden mx-auto flex touch-manipulation gap-[6px] justify-center flex-wrap md:gap-3 items-center'>
 					{scrollSnaps.map((_, index) => (
@@ -59,13 +59,10 @@ const AppCarousel = ({
 					))}
 				</div>
 			)}
-			<div
-				className={cn('overflow-hidden max-w-[520px] mx-auto', classNames)}
-				ref={emblaRef}
-			>
+			<div className='overflow-hidden' ref={emblaRef}>
 				{children}
 			</div>
-		</>
+		</div>
 	);
 };
 
