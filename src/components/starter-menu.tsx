@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import AppCarousel from './AppCarousel';
 
 const StarterMenu = () => {
 	return (
@@ -13,36 +14,38 @@ const StarterMenu = () => {
 						year, we are opening access to our starter menu at $35:
 					</p>
 				</div>
-				<div className='grid w-full md:w-fit md:grid-cols-2 mt-7 md:mt-24 gap-[30px]'>
-					<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex flex-col items-center rounded-[20px]'>
-						<div className='w-[227px] xl:w-[393px] h-[346px] xl:h-[490px]'>
-							<Image
-								src={'/images/food-1.webp'}
-								alt='food-1'
-								width={393}
-								height={490}
-								className='object-contain h-auto max-w-full'
-							/>
+				<AppCarousel>
+					<div className='flex mt-7 md:mt-24 gap-[30px]'>
+						<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex-[0_0_100%] flex flex-col items-center rounded-[20px]'>
+							<div className='w-[227px] xl:w-[393px] h-[346px] xl:h-[490px]'>
+								<Image
+									src={'/images/food-1.webp'}
+									alt='food-1'
+									width={393}
+									height={490}
+									className='object-contain h-auto max-w-full'
+								/>
+							</div>
+							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
+								Stuffed Bòlì Boat with Red Tilapia
+							</span>
 						</div>
-						<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-							Stuffed Bòlì Boat with Red Tilapia
-						</span>
-					</div>
-					<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex flex-col items-center rounded-[20px]'>
-						<div className='w-[227px] xl:w-[386px] h-[346px] xl:h-[490px]'>
-							<Image
-								src={'/images/food-2.webp'}
-								alt='food-1'
-								width={386}
-								height={490}
-								className='object-contain h-fit max-w-full'
-							/>
+						<div className='bg-white py-10 px-[22px] md:px-[44px] xl:px-[62px] flex-[0_0_100%] flex flex-col items-center rounded-[20px]'>
+							<div className='w-[227px] xl:w-[386px] h-[346px] xl:h-[490px]'>
+								<Image
+									src={'/images/food-2.webp'}
+									alt='food-1'
+									width={386}
+									height={490}
+									className='object-contain h-fit max-w-full'
+								/>
+							</div>
+							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
+								Stuffed Dùndú Roll with Turkey Tail
+							</span>
 						</div>
-						<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-							Stuffed Dùndú Roll with Turkey Tail
-						</span>
 					</div>
-				</div>
+				</AppCarousel>
 			</div>
 		</section>
 	);
