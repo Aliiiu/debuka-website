@@ -5,9 +5,11 @@ import { Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import MenuDrawer from './menuDrawer';
 import WaitlistModal from './waitlistModal';
+import { usePathname } from 'next/navigation';
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const pathname = usePathname();
 
 	function openMenu() {
 		setIsOpen(true);
@@ -20,7 +22,11 @@ export const Navbar = () => {
 	}
 
 	return (
-		<nav className='sticky bg-black top-0 z-50'>
+		<nav
+			className={`sticky ${
+				pathname === '/' ? 'bg-black' : 'bg-primary-dark'
+			} top-0 z-50`}
+		>
 			<div className='container py-6 flex justify-between items-center'>
 				<button
 					onClick={() => {
