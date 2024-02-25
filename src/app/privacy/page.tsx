@@ -1,11 +1,9 @@
+import AltPageHeader from '@/components/AltPageHeader';
+
 export default function PrivacyPage() {
 	return (
 		<main className='flex min-h-screen flex-col items-center bg-grey-100'>
-			<div className='h-[348px] bg-privacy-base md:bg-privacy bg-contain bg-no-repeat bg-bottom -mt-[72px] bg-primary-dark w-full flex justify-center items-center'>
-				<h2 className='text-4xl text-white md:text-4xl lg:text-5xl font-semibold font-dms-serif'>
-					Privacy Policy
-				</h2>
-			</div>
+			<AltPageHeader title='Privacy' />
 			<div className='container flex flex-col md:flex-row gap-10 py-10 md:py-14'>
 				<div className='max-w-[185px] hidden md:block'>
 					<h2>Terms of use</h2>

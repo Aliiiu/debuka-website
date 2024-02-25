@@ -6,6 +6,8 @@ import { Fragment, useState } from 'react';
 import MenuDrawer from './menuDrawer';
 import WaitlistModal from './waitlistModal';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +29,7 @@ export const Navbar = () => {
 				pathname === '/' ? 'bg-black' : 'bg-primary-dark'
 			} top-0 z-50`}
 		>
-			<div className='container py-6 flex justify-between items-center'>
+			<div className='container py-5 flex justify-between items-center'>
 				<button
 					onClick={() => {
 						openMenu();
@@ -36,6 +38,14 @@ export const Navbar = () => {
 				>
 					<Menu />
 				</button>
+				{pathname !== '/' && (
+					<Link
+						href={'/'}
+						className='relative hidden md:block w-[118px] h-[50px]'
+					>
+						<Image src={'/svgs/debuka-white.svg'} alt='debuka white' fill />
+					</Link>
+				)}
 				<WaitlistModal />
 			</div>
 			<Transition

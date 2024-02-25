@@ -2,6 +2,7 @@
 
 import Arrow from '@/assets/icons/arrow';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -42,8 +43,15 @@ const Footer = () => {
 			<div className='flex flex-col md:flex-row gap-2 justify-between text-sm md:text-base border-t text-body-alt border-grey-900 py-[30px]'>
 				<span>Copyright {new Date().getFullYear()} | All rights reserved</span>
 				<div className='flex items-center gap-8'>
-					<span>Terms of service</span>
-					<span>Privacy policy</span>
+					<Link
+						href={'/terms-and-condition'}
+						className='hover:underline hover:text-white'
+					>
+						Terms of service
+					</Link>
+					<Link href={'/privacy'} className='hover:underline hover:text-white'>
+						Privacy policy
+					</Link>
 				</div>
 			</div>
 		</footer>
