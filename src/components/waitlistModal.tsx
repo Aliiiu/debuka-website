@@ -25,7 +25,7 @@ const WaitlistModal = () => {
 		<>
 			<button
 				onClick={openModal}
-				className='text-primary-light cursor-pointer hover:underline'
+				className='text-primary-light text-sm md:text-base cursor-pointer hover:underline'
 			>
 				Join the party
 			</button>

@@ -27,7 +27,7 @@ const StarterMenu = () => {
 								/>
 							</div>
 							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-								Stuffed Bòlì Boat with Red Tilapia
+								Stuffed Dùndú Roll with Turkey Tail
 							</span>
 						</div>
 						<div className='min-w-0 flex-[0_0_100%] bg-white py-10 xl:px-10 flex flex-col items-center rounded-[20px]'>
@@ -41,7 +41,7 @@ const StarterMenu = () => {
 								/>
 							</div>
 							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-								Stuffed Dùndú Roll with Turkey Tail
+								Stuffed Bòlì Boat with Red Tilapia
 							</span>
 						</div>
 					</div>

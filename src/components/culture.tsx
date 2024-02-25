@@ -23,7 +23,7 @@ const Culture = () => {
 						cannot disrespect another for differences of opinions or beliefs.
 					</p>
 				</div>
-				<div className='px-8 md:px-[50px] min-h-[237px] py-10 bg-[#EBFFF1] text-body-alt flex flex-col cursor-pointer gap-5'>
+				<div className='px-8 md:px-[50px] min-h-[237px] py-10 md:bg-[#EBFFF1] hover:bg-[#EBFFF1] text-body-alt flex flex-col cursor-pointer gap-5'>
 					<Message />
 					<h2 className='text-primary-dark font-dms-serif text-[28px] leading-none'>
 						Communicate clearly
@@ -34,7 +34,7 @@ const Culture = () => {
 						communicate clearly is to speak, listen, validate and document.  
 					</p>
 				</div>
-				<div className='px-8 md:px-[50px] min-h-[237px] py-10 bg-[#EBFFF1] text-body-alt flex flex-col cursor-pointer gap-5'>
+				<div className='px-8 md:px-[50px] min-h-[237px] py-10 md:bg-[#EBFFF1] hover:bg-[#EBFFF1] text-body-alt flex flex-col cursor-pointer gap-5'>
 					<Zap />
 					<h2 className='text-primary-dark font-dms-serif text-[28px] leading-none'>
 						Go the extra

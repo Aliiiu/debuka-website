@@ -8,11 +8,9 @@ import { useInView } from 'react-intersection-observer';
 const Hero = () => {
 	const { ref, inView } = useInView();
 	const animation = useAnimation();
-	const [hasAnimated, setHasAnimated] = useState(false);
 
 	useEffect(() => {
-		if (inView && !hasAnimated) {
-			setHasAnimated(true);
+		if (inView) {
 			animation.start({
 				y: 0,
 				transition: {
@@ -21,12 +19,12 @@ const Hero = () => {
 				},
 			});
 		}
-		if (!inView && !hasAnimated) {
+		if (!inView) {
 			animation.start({
 				y: '400px',
 			});
 		}
-	}, [animation, inView, hasAnimated]);
+	}, [animation, inView]);
 
 	return (
 		<section className='relative w-full bg-black'>
@@ -34,8 +32,7 @@ const Hero = () => {
 				<div className='flex flex-col items-center'>
 					<div className='overflow-hidden'>
 						<motion.div
-							animate={animation}
-							className='w-[250px] md:w-[321px] h-[109px] md:h-[136px]'
+							className='w-[200px] md:w-[321px] h-[109px] md:h-[136px]'
 							ref={ref}
 						>
 							<Image
