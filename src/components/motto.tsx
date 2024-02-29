@@ -26,7 +26,7 @@ const Motto = () => {
 						key={title}
 						onMouseEnter={() => setHoveredIndex(index)}
 						onMouseLeave={() => setHoveredIndex(0)}
-						className={`px-[30px] min-h-[327px] xl:min-w-[358px] py-8 focus:bg-[#EBFFF1] cursor-pointer hover:bg-[#EBFFF1] text-body-alt flex flex-col gap-5 ${
+						className={`px-[30px] min-h-[270px] md:min-h-[327px] xl:min-w-[358px] py-8 focus:bg-[#EBFFF1] cursor-pointer hover:bg-[#EBFFF1] text-body-alt flex flex-col gap-5 ${
 							hoveredIndex === index ? 'bg-[#EBFFF1]' : 'hover:bg-[#EBFFF1]'
 						}`}
 					>
@@ -37,13 +37,13 @@ const Motto = () => {
 						) : (
 							<Style />
 						)}
-						<h2 className='text-primary-dark font-dms-serif text-[28px] leading-none'>
+						<h2 className='text-primary-dark font-dms-serif text-2xl md:text-[28px] leading-none'>
 							{title}
 						</h2>
 						<p
 							className={`${
 								title === 'Vision' ? 'max-w-[240px]' : 'max-w-[294px]'
-							}  leading-tight`}
+							}  text-sm md:text-base`}
 						>
 							{content}
 						</p>

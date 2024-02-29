@@ -29,7 +29,7 @@ export const Navbar = () => {
 				pathname === '/' ? 'bg-black' : 'bg-primary-dark'
 			} top-0 z-50`}
 		>
-			<div className='container py-4 md:py-5 flex justify-between items-center'>
+			<div className='container py-5 flex justify-between items-center'>
 				<button
 					onClick={() => {
 						openMenu();

@@ -25,7 +25,7 @@ const Hero = () => {
 		<section className='relative w-full bg-black'>
 			<div
 				id='hero'
-				className='container h-[calc(100vh-72px)] flex items-center md:items-start justify-center pt-0 md:pb-[200px] md:pt-[180px]'
+				className='container h-screen md:h-[calc(100vh-64px)] -mt-[60px] md:mt-0 flex items-center md:items-start justify-center pt-0 md:pb-[200px] md:pt-[180px]'
 			>
 				<div className='flex flex-col items-center'>
 					<div className='overflow-hidden'>
