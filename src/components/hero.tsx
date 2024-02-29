@@ -1,39 +1,37 @@
 'use client';
 
-import { useAnimation, motion } from 'framer-motion';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { useEffect, useRef } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import AnimatedCursor from './AnimatedCursor';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-	const { ref, inView } = useInView();
-	const animation = useAnimation();
-
 	useEffect(() => {
-		if (inView) {
-			animation.start({
-				y: 0,
-				transition: {
-					type: 'tween',
-					duration: 1.2,
-				},
-			});
-		}
-		if (!inView) {
-			animation.start({
-				y: '400px',
-			});
-		}
-	}, [animation, inView]);
-
+		gsap.to('#logo', {
+			scrollTrigger: {
+				trigger: '#about',
+				start: 'top bottom',
+				end: '+=350',
+				scrub: true,
+			},
+			opacity: 0,
+		});
+	}, []);
 	return (
 		<section className='relative w-full bg-black'>
-			<div className='container h-[calc(100vh-72px)] flex justify-center pt-[140px] md:pb-[200px] md:pt-[180px]'>
+			<div
+				id='hero'
+				className='container h-[calc(100vh-72px)] flex items-center md:items-start justify-center pt-0 md:pb-[200px] md:pt-[180px]'
+			>
 				<div className='flex flex-col items-center'>
 					<div className='overflow-hidden'>
-						<motion.div
+						<div
+							id='logo'
 							className='w-[200px] md:w-[321px] h-[109px] md:h-[136px]'
-							ref={ref}
 						>
 							<Image
 								src={'/svgs/debuka.svg'}
@@ -42,7 +40,7 @@ const Hero = () => {
 								height={136}
 								className='object-contain h-auto max-w-full'
 							/>
-						</motion.div>
+						</div>
 					</div>
 
 					<span className='text-primary font-extralight mt-2 md:mt-6 text-sm md:text-xl leading-[26px] pl-[0.5em] tracking-[0.5em]'>
@@ -50,7 +48,8 @@ const Hero = () => {
 					</span>
 				</div>
 			</div>
-			<div className='absolute bottom-0 md:-bottom-20 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]' />
+			{/* <AnimatedCursor /> */}
+			<div className='mock absolute -bottom-20 md:-bottom-40 xl:-bottom-40 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]' />
 		</section>
 	);
 };

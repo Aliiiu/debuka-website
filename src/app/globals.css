@@ -84,3 +84,40 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+
+.sun-effect {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #ffcc00; /* Base color for the sun */
+	background-image: radial-gradient(
+		circle at center,
+		#ffff00,
+		#ffcc00 70%,
+		#ff9900
+	);
+	box-shadow: 0 0 50px #ffcc00, 0 0 100px #ffcc00; /* Glow effect */
+	position: relative;
+	display: block;
+	margin: 50px auto; /* Center the sun */
+}
+
+/* Adding beams around the sun */
+.sun-effect::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 140px;
+	height: 140px;
+	background-image: conic-gradient(
+		from 15deg at center,
+		#ffffff00 0deg,
+		#ffffff00 3deg,
+		#ffffcc22 3deg,
+		#ffffcc22 5deg,
+		#ffffff00 5deg
+	);
+	border-radius: 50%;
+	z-index: -1;
+}
