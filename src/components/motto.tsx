@@ -26,10 +26,8 @@ const Motto = () => {
 						key={title}
 						onMouseEnter={() => setHoveredIndex(index)}
 						onMouseLeave={() => setHoveredIndex(0)}
-						className={`px-[30px] min-h-[270px] md:min-h-[327px] xl:min-w-[358px] py-8 cursor-pointer md:hover:bg-[#EBFFF1] text-body-alt flex flex-col gap-5 ${
-							hoveredIndex === index
-								? 'md:bg-[#EBFFF1]'
-								: 'md:hover:bg-[#EBFFF1]'
+						className={`px-[30px] min-h-[270px] md:min-h-[327px] xl:min-w-[358px] py-8 cursor-pointer hover:bg-[#EBFFF1] text-body-alt flex flex-col gap-5 ${
+							hoveredIndex === index ? 'bg-[#EBFFF1]' : 'hover:bg-[#EBFFF1]'
 						}`}
 					>
 						{title === 'Vision' ? (

@@ -47,21 +47,19 @@ const AppCarousel = ({
 	return (
 		<div className={cn('max-w-[500px] mx-auto', classNames)}>
 			{data && (
-				<div className='w-full overflow-auto'>
-					<div className='w-fit flex touch-manipulation gap-[6px] justify-center md:gap-3 items-center'>
-						{scrollSnaps.map((_, index) => (
-							<button
-								key={index}
-								onClick={() => scrollTo(index)}
-								className={cn(
-									'border border-grey-300 py-1 md:py-2 px-2 md:px-3 font-semibold rounded-full text-grey-800 text-xs',
-									index === selectedIndex ? 'bg-primary-dark text-white' : ''
-								)}
-							>
-								{data[index].title}
-							</button>
-						))}
-					</div>
+				<div className='w-fit overflow-hidden mx-auto flex flex-wrap touch-manipulation gap-[6px] justify-center md:gap-3 items-center'>
+					{scrollSnaps.map((_, index) => (
+						<button
+							key={index}
+							onClick={() => scrollTo(index)}
+							className={cn(
+								'border border-grey-300 py-1 md:py-2 px-2 md:px-3 font-semibold rounded-full text-grey-800 text-xs',
+								index === selectedIndex ? 'bg-primary-dark text-white' : ''
+							)}
+						>
+							{data[index].title}
+						</button>
+					))}
 				</div>
 			)}
 			<div className='overflow-hidden' ref={emblaRef}>
