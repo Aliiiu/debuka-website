@@ -3,11 +3,11 @@
 import Menu from '@/assets/icons/menu';
 import { Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
-import MenuDrawer from './menuDrawer';
-import WaitlistModal from './waitlistModal';
+import WaitlistModal from '../widget/waitlistModal';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import MenuDrawer from './menuDrawer';
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);

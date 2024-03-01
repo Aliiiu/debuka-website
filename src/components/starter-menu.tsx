@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import AppCarousel from './AppCarousel';
+import AppCarousel from './widget/AppCarousel';
 
 const StarterMenu = () => {
 	return (

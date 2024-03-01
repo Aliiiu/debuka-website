@@ -2,7 +2,7 @@
 
 import { fundamentals } from '@/assets/constants/fundamentals';
 import Quote from '@/assets/icons/quote';
-import AppCarousel from './AppCarousel';
+import AppCarousel from './widget/AppCarousel';
 
 const Fundamentals = () => {
 	return (
