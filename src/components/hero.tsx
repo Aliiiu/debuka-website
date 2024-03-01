@@ -2,10 +2,8 @@
 
 import Image from 'next/image';
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import { useEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import AnimatedCursor from './AnimatedCursor';
 
 gsap.registerPlugin(ScrollTrigger);
 

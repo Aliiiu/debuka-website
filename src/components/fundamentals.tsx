@@ -24,10 +24,10 @@ const Fundamentals = () => {
 							{fundamentals.map((item) => (
 								<div
 									key={item.id}
-									className='min-w-0 pl-4 flex flex-col items-center gap-5 flex-[0_0_100%]'
+									className='min-w-0 flex flex-col items-center gap-5 flex-[0_0_100%]'
 								>
 									<Quote />
-									<span className='font-semibold z-0 text-grey-800 text-xl md:text-lg'>
+									<span className='font-semibold z-0 text-grey-800 md:text-lg'>
 										{item.content}
 									</span>
 								</div>

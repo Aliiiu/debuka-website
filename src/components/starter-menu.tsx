@@ -41,7 +41,7 @@ const StarterMenu = () => {
 								/>
 							</div>
 							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-								Stuffed Bòlì Boat with Red Tilapia
+								Stuffed Bòlì Bowl with Red Tilapia
 							</span>
 						</div>
 					</div>
