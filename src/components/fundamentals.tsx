@@ -8,7 +8,7 @@ const Fundamentals = () => {
 	return (
 		<section
 			id='our-promises'
-			className='mx-auto max-w-[1440px] text-center bg-[#F1F1F1] bg-masked-base md:bg-masked bg-no-repeat bg-contain bg-bottom w-full pt-[100px] md:pt-[93px] pb-[180px] md:pb-[289px]'
+			className='mx-auto max-w-[1440px] text-center bg-masked-base md:bg-masked bg-no-repeat bg-contain bg-bottom w-full pt-[100px] md:pt-[93px] pb-[180px] md:pb-[289px]'
 		>
 			<h2 className='text-primary-dark font-semibold text-4xl font-dms-serif'>
 				Fundamental Promise
