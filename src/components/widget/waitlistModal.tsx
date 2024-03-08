@@ -27,7 +27,7 @@ const WaitlistModal = () => {
 				onClick={openModal}
 				className='text-primary-light text-sm md:text-base cursor-pointer hover:underline'
 			>
-				Join the party
+				Join the Party
 			</button>
 			<Transition show={isOpenModal} as={Fragment}>
 				<Dialog as='div' className={'relative z-10'} onClose={closeModal}>
@@ -78,7 +78,7 @@ const WaitlistModal = () => {
 										as='h3'
 										className='text-2xl md:text-4xl font-dms-serif font-bold mt-8 leading-6 text-gray-900'
 									>
-										Join the party
+										Join the Party
 									</Dialog.Title>
 									<form onSubmit={onSubmitHandler} className='mt-5'>
 										<div>
