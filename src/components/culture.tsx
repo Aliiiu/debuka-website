@@ -19,8 +19,7 @@ const Culture = () => {
 						Respect everyone
 					</h2>
 					<p className='max-w-[415px] text-sm md:text-base'>
-						We treat everyone (partners, deBukaneers, everyone) with dignity. We
-						cannot disrespect another for differences of opinions or beliefs.
+						We cannot disrespect another for differences of opinions or beliefs.
 					</p>
 				</div>
 				<div className='px-8 md:px-[50px] min-h-[250px] md:min-h-[237px] py-10 md:bg-[#EBFFF1] hover:bg-[#EBFFF1] text-body-alt flex flex-col cursor-pointer gap-5'>
@@ -29,9 +28,7 @@ const Culture = () => {
 						Communicate clearly
 					</h2>
 					<p className='max-w-[415px] text-sm md:text-base'>
-						Communicate when you have to and listen when others need to
-						communicate. Ask clarifying questions when anything is unclear. To
-						communicate clearly is to speak, listen, validate and document.  
+						To communicate clearly is to speak, listen, validate and document.  
 					</p>
 				</div>
 				<div className='px-8 md:px-[50px] min-h-[250px] md:min-h-[237px] py-10 md:bg-[#EBFFF1] hover:bg-[#EBFFF1] text-body-alt flex flex-col cursor-pointer gap-5'>
@@ -40,8 +37,8 @@ const Culture = () => {
 						Go the extra
 					</h2>
 					<p className='max-w-[415px] text-sm md:text-base'>
-						Knowing that serving others is a privilege, everyone gets their
-						hands dirty to deliver elevated hospitality like no other.
+						Knowing that serving others is a privilege, we extend
+						ourselves to deliver elevated hospitality like no other.
 					</p>
 				</div>
 				<div className='px-8 md:px-[50px] min-h-[250px] md:min-h-[237px] py-10 bg-white text-body-alt hover:bg-[#EBFFF1] cursor-pointer flex flex-col gap-5'>
