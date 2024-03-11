@@ -1,8 +1,15 @@
 import { Dialog, Transition } from '@headlessui/react';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const WaitlistModal = () => {
+	const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID || '';
+	const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID || '';
+	const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY || '';
 	const [isOpenModal, setIsOpenModal] = useState(false);
+	const formRef = useRef<HTMLFormElement>(null);
+	const [loading, setLoading] = useState(false);
 	const openModal = () => {
 		setIsOpenModal(true);
 	};
@@ -14,12 +21,28 @@ const WaitlistModal = () => {
 	const onSubmitHandler = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
-		const form = event.currentTarget;
-		const messageInput = form.elements.namedItem('email') as HTMLInputElement;
-		const emailAddress = messageInput.value.trim();
-		console.log(emailAddress);
+		setLoading(true);
 
-		form.reset();
+		const form = event.currentTarget;
+
+		emailjs
+			.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current || '', {
+				publicKey: PUBLIC_KEY,
+			})
+			.then(
+				() => {
+					toast.success('Thanks for signing up');
+				},
+				(error) => {
+					console.log('FAILED...', error.text);
+					toast.error('Something went wrong, try again');
+				}
+			)
+			.finally(() => {
+				form.reset();
+				setLoading(false);
+				closeModal();
+			});
 	};
 	return (
 		<>
@@ -80,7 +103,11 @@ const WaitlistModal = () => {
 									>
 										Join the party
 									</Dialog.Title>
-									<form onSubmit={onSubmitHandler} className='mt-5'>
+									<form
+										ref={formRef}
+										onSubmit={onSubmitHandler}
+										className='mt-5'
+									>
 										<div>
 											<p className='text-sm text-gray-500'>
 												Be the first to receive updates regarding our upcoming
@@ -105,10 +132,10 @@ const WaitlistModal = () => {
 										<div className='mt-8'>
 											<button
 												type='submit'
-												className='inline-flex justify-center rounded-md border border-transparent bg-primary w-full text-white py-3'
-												onClick={closeModal}
+												disabled={loading}
+												className='inline-flex justify-center rounded-md border border-transparent bg-primary disabled:bg-primary/50 w-full text-white py-3 disabled:cursor-not-allowed'
 											>
-												Submit
+												{loading ? 'Sending...' : 'Submit'}
 											</button>
 										</div>
 									</form>

@@ -3,17 +3,41 @@
 import Arrow from '@/assets/icons/arrow';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { cn } from '@/lib/utils';
+import toast from 'react-hot-toast';
 
 const Footer = () => {
+	const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID || '';
+	const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID || '';
+	const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY || '';
+	const [loading, setLoading] = useState(false);
+	const formRef = useRef<HTMLFormElement>(null);
+
 	const onSubmitHandler = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
+		setLoading(true);
 
 		const form = event.currentTarget;
-		const messageInput = form.elements.namedItem('email') as HTMLInputElement;
-		const emailAddress = messageInput.value.trim();
-		console.log(emailAddress);
-		form.reset();
+
+		emailjs
+			.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current || '', {
+				publicKey: PUBLIC_KEY,
+			})
+			.then(
+				() => {
+					toast.success('Thanks for signing up');
+				},
+				(error) => {
+					console.log('FAILED...', error.text);
+					toast.error('Something went wrong, try again');
+				}
+			)
+			.finally(() => {
+				form.reset();
+				setLoading(false);
+			});
 	};
 
 	return (
@@ -48,8 +72,11 @@ const Footer = () => {
 				<div className='flex flex-col text-white items-start md:flex-row md:items-center gap-2'>
 					<span className='text-sm'>Sign up to our mailing list</span>
 					<form
+						ref={formRef}
 						onSubmit={onSubmitHandler}
-						className='border border-primary rounded-[10px] flex gap-2 items-center py-3 px-4'
+						className={cn(
+							'border border-primary rounded-[10px] flex gap-2 items-center py-3 px-4'
+						)}
 					>
 						<input
 							type='text'
@@ -57,8 +84,12 @@ const Footer = () => {
 							className='bg-transparent outline-none text-sm text-white min-w-[228px] flex-1'
 							placeholder='Your email here'
 						/>
-						<button type='submit'>
-							<Arrow />
+						<button
+							disabled={loading}
+							type='submit'
+							className=' disabled:cursor-not-allowed'
+						>
+							{loading ? <div className='custom-loader'></div> : <Arrow />}
 						</button>
 					</form>
 				</div>
