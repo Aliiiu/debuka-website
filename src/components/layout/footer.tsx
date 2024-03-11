@@ -101,10 +101,10 @@ const Footer = () => {
 						href={'/terms-and-condition'}
 						className='hover:underline hover:text-white'
 					>
-						Terms of service
+						Terms of Service
 					</Link>
 					<Link href={'/privacy'} className='hover:underline hover:text-white'>
-						Privacy policy
+						Privacy Policy
 					</Link>
 				</div>
 			</div>

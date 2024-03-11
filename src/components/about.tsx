@@ -6,12 +6,9 @@ const About = () => {
 					<div className='max-w-[708px] text-white text-center'>
 						<h2 className='text-3xl md:text-4xl font-dms-serif about'>About</h2>
 						<p className='mt-5 text-grey-200 text-sm md:text-base font-light'>
-							deBuka is a fine-dining company scheduled to be located in one of
-							the most celebrated Greater Toronto Area (GTA) in Ontario Canada.
-							deBuka aims to elevate people from all cultures with authentic and
-							innovative Nigerian cuisines that cannot be found elsewhere,
-							treating them the way they should be treated and more. Elevated
-							hospitality, defined!
+							deBuka is a fine-dining company that aims to elevate 
+							people from all cultures by creating unparalleled
+							dining experiences with innovative Nigerian cuisines.
 						</p>
 					</div>
 				</div>

@@ -11,7 +11,7 @@ const StarterMenu = () => {
 					</h2>
 					<p className='mt-5 text-sm md:text-base text-body-alt text-center'>
 						While we are working on the official physical launch later in the
-						year, we are opening access to our starter menu at $35:
+						year, we are opening access to our starter menu from $35:
 					</p>
 				</div>
 				<AppCarousel classNames='max-w-[320px] md:max-w-[500px]'>
