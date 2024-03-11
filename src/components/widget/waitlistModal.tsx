@@ -25,6 +25,8 @@ const WaitlistModal = () => {
 
 		const form = event.currentTarget;
 
+		console.log(formRef.current);
+
 		emailjs
 			.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current || '', {
 				publicKey: PUBLIC_KEY,
@@ -122,9 +124,17 @@ const WaitlistModal = () => {
 													Email Address
 												</label>
 												<input
-													type='text'
-													name='from_email'
+													type='email'
+													name='user_email'
 													placeholder='youremail@gmail.com'
+													className='py-3 px-2 border border-grey-200 text-body-alt outline-none rounded-lg'
+												/>
+											</div>
+											<div className='hidden gap-1 mt-6'>
+												<input
+													type='text'
+													name='message'
+													defaultValue='Invite me to the physical launch party!'
 													className='py-3 px-2 border border-grey-200 text-body-alt outline-none rounded-lg'
 												/>
 											</div>

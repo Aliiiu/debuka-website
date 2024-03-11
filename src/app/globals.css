@@ -86,8 +86,8 @@ h6 {
 }
 
 .custom-loader {
-	width: 25px;
-	height: 25px;
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
 	background: conic-gradient(#0000 10%, #518a79);
 	-webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 2px), #000 0);

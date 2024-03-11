@@ -79,10 +79,17 @@ const Footer = () => {
 						)}
 					>
 						<input
-							type='text'
-							name='email'
+							type='email'
+							name='user_email'
 							className='bg-transparent outline-none text-sm text-white min-w-[228px] flex-1'
 							placeholder='Your email here'
+						/>
+						<input
+							type='text'
+							name='message'
+							defaultValue='Invite me to the physical launch party!'
+							className='py-3 px-2 border border-grey-200 text-body-alt outline-none rounded-lg'
+							hidden
 						/>
 						<button
 							disabled={loading}
