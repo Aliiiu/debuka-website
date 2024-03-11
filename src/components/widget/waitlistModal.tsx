@@ -115,7 +115,7 @@ const WaitlistModal = () => {
 											</p>
 											<div className='flex flex-col gap-1 mt-6'>
 												<label
-													htmlFor='email_address'
+													htmlFor='from_email'
 													className='text-sm text-body-alt'
 												>
 													{' '}
@@ -123,7 +123,7 @@ const WaitlistModal = () => {
 												</label>
 												<input
 													type='text'
-													name='email'
+													name='from_email'
 													placeholder='youremail@gmail.com'
 													className='py-3 px-2 border border-grey-200 text-body-alt outline-none rounded-lg'
 												/>
