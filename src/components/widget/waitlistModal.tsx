@@ -117,7 +117,7 @@ const WaitlistModal = () => {
 											</p>
 											<div className='flex flex-col gap-1 mt-6'>
 												<label
-													htmlFor='from_email'
+													htmlFor='user_email'
 													className='text-sm text-body-alt'
 												>
 													{' '}
