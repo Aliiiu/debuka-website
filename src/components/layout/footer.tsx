@@ -47,7 +47,7 @@ const Footer = () => {
 			</div>
 			<div className='flex flex-col items-start md:flex-row md:items-center justify-between gap-5 py-5'>
 				<Link
-					href={'/'}
+					href={'https://www.instagram.com/debuka_ca'}
 					target='_blank'
 					className='flex items-center cursor-pointer group gap-2'
 				>
