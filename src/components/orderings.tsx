@@ -1,6 +1,5 @@
 import Call from '@/assets/icons/call';
 import Check from '@/assets/icons/check';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Orderings = () => {
@@ -17,18 +16,14 @@ const Orderings = () => {
 						</h2>
 						<div className='flex flex-col mt-5 gap-4'>
 							<span className='text-body-alt'>
-								Tentatively, orders can be placed by reaching us on Whatsapp
+								Tentatively, orders can be placed by dialling
 							</span>
 							<Link
-								href="https://wa.me/1234567890"
+								href={'tel:+23400 0000 0000'}
 								className='py-2 px-3 rounded-full flex items-center gap-2 bg-primary w-fit text-xs text-white'
-								target="_blank"
 							>
-							
-								
 								<Call />
-								<span>Message: 12 3456 7890</span>
-							
+								<span>Call: 00 0000 0000</span>
 							</Link>
 							<p className='text-body-alt text-sm max-w-[378px]'>
 								Delivery fee is free for the first order and a fee of $10 will

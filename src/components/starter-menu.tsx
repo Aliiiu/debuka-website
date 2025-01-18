@@ -17,39 +17,33 @@ const StarterMenu = () => {
 				<AppCarousel classNames='max-w-[320px] md:max-w-[500px]'>
 					<div className='flex mt-7 md:mt-24'>
 						<div className='min-w-0 flex-[0_0_100%] bg-white py-10 xl:px-10 flex flex-col items-center rounded-[20px]'>
-							    <div className='w-[227px] xl:w-[393px] md:h-[329px] xl:h-[570px]'>
+							<div className='w-[227px] xl:w-[393px] md:h-[346px] xl:h-[490px]'>
 								<Image
-									src={'/images/DSC_8192-Edit.webp'}
-									alt = 'food-1'
-									width = {393}
-									height = {570}
-									className = 'object-cover'
+									src={'/images/food-1.webp'}
+									alt='food-1'
+									width={393}
+									height={490}
+									className='object-contain h-auto max-w-full'
 								/>
 							</div>
 							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-								
-								Infused Poultry
+								Stuffed Dùndú Roll with Turkey Tail
 							</span>
-							
 						</div>
 						<div className='min-w-0 flex-[0_0_100%] bg-white py-10 xl:px-10 flex flex-col items-center rounded-[20px]'>
-							<div className='w-[227px] xl:w-[393px] md:h-[331px] xl:h-[574px]'>
+							<div className='w-[227px] xl:w-[386px] md:h-[346px] xl:h-[490px]'>
 								<Image
-									src={'/images/DSC_8171.webp'}
+									src={'/images/food-2.webp'}
 									alt='food-1'
-									width = {393}
-									height = {574}
-									className='object-cover'
+									width={386}
+									height={490}
+									className='object-contain h-fit max-w-full'
 								/>
 							</div>
-							
 							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
-								
-								Red Tilapia
+								Stuffed Bòlì Bowl with Red Tilapia
 							</span>
-							
 						</div>
-						
 					</div>
 				</AppCarousel>
 			</div>

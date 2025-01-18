@@ -94,13 +94,5 @@ const Hero = () => {
       			<div className='mock md:hidden lg:block absolute -bottom-10 md:-bottom-40 xl:-bottom-40 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]' />
     </section>
   );
-};
 
 export default Hero;
-
-
-
-
-
-
-
