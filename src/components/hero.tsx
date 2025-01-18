@@ -65,7 +65,12 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [isSpotActive, setIsSpotActive] = useState(false);
+<<<<<<< Updated upstream
   const timeoutRef = useRef<NodeJS.Timeout>();
+=======
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+
+>>>>>>> Stashed changes
 
   useEffect(() => {
     gsap.to('#logo', {
