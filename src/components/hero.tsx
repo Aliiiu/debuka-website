@@ -68,7 +68,7 @@ const Hero = () => {
     <section className="relative w-full h-screen bg-black overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 z-0"
+        className={`absolute inset-0 z-0 transition-opacity duration-500 ${hasInteracted ? 'opacity-100' : 'opacity-0'}`}
         style={{
           backgroundImage: "url('/images/starryBackground.jpeg')",
           backgroundSize: 'cover',
@@ -83,10 +83,10 @@ const Hero = () => {
           background: `radial-gradient(
             circle 1500px at ${cursorPos.x}px ${cursorPos.y}px,
             transparent 0%,
-            rgba(0, 0, 0, ${isSpotActive ? '1.5' : '1.5'}) 25%
+            rgba(0, 0, 0, ${isSpotActive ? '1.0' : '1.0'}) 25%
           )`,
           transition: 'all 1s cubic-bezier(0.4, 0, 0.2, 1)',
-          backdropFilter: 'brightness(0.6)',
+          backdropFilter: 'brightness(1.5)',
         }}
       />
 
