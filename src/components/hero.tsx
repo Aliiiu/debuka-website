@@ -23,8 +23,19 @@ const Hero = () => {
     });
 
     const handleMouseMove = (e: MouseEvent) => {
-      const { clientX, clientY } = e;
-      setCursorPos({ x: clientX, y: clientY });
+      setCursorPos({ x: e.clientX, y: e.clientY });
+      activateSpotlight();
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        const touch = e.touches[0];
+        setCursorPos({ x: touch.clientX, y: touch.clientY });
+        activateSpotlight();
+      }
+    };
+
+    const activateSpotlight = () => {
       setIsSpotActive(true);
 
       // Clear the existing timeout
@@ -38,9 +49,13 @@ const Hero = () => {
       }, 5000);
     };
 
+    // Add event listeners for both mouse and touch events
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchmove', handleTouchMove);
+
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('touchmove', handleTouchMove);
 
       // Cleanup the timeout on unmount
       if (timeoutRef.current) {
@@ -68,7 +83,7 @@ const Hero = () => {
           background: `radial-gradient(
             circle 1500px at ${cursorPos.x}px ${cursorPos.y}px,
             transparent 0%,
-            rgba(0, 0, 0, ${isSpotActive ? '1.0' : '1.0'}) 25%
+            rgba(0, 0, 0, ${isSpotActive ? '1.5' : '1.5'}) 25%
           )`,
           transition: 'all 1s cubic-bezier(0.4, 0, 0.2, 1)',
           backdropFilter: 'brightness(0.6)',
