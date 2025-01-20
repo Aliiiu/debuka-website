@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [isSpotActive, setIsSpotActive] = useState(false);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null); // Allow null
 
   useEffect(() => {
+    // GSAP animation for fading out the logo on scroll
     gsap.to('#logo', {
       scrollTrigger: {
         trigger: '#about',
@@ -26,10 +27,12 @@ const Hero = () => {
       setCursorPos({ x: clientX, y: clientY });
       setIsSpotActive(true);
 
+      // Clear the existing timeout
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
 
+      // Start a new timeout
       timeoutRef.current = setTimeout(() => {
         setIsSpotActive(false);
       }, 5000);
@@ -38,6 +41,8 @@ const Hero = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+
+      // Cleanup the timeout on unmount
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
@@ -46,17 +51,17 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen bg-black overflow-hidden">
-      
+      {/* Background Image */}
       <div
-      className = "absolute inset-0 z-0"
-      style = {{
-      	backgroundImage: "url('/images/starryBackground.jpeg')",
-      	backgroundSize: 'cover',
-      	backgroundPosition: 'center',
-      	}}
-      	
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: "url('/images/starryBackground.jpeg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       />
-     
+
+      {/* Spotlight Effect */}
       <div
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
@@ -70,6 +75,7 @@ const Hero = () => {
         }}
       />
 
+      {/* Hero Content */}
       <div
         id="hero"
         className="relative z-20 container h-screen flex items-center justify-center"
@@ -91,16 +97,11 @@ const Hero = () => {
           </span>
         </div>
       </div>
-      			<div className='mock md:hidden lg:block absolute -bottom-10 md:-bottom-40 xl:-bottom-40 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]' />
+
+      {/* Decorative Mask */}
+      <div className="mock md:hidden lg:block absolute -bottom-10 md:-bottom-40 xl:-bottom-40 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]" />
     </section>
   );
 };
 
 export default Hero;
-
-
-
-
-
-
-
