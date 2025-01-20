@@ -8,10 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
   const [isSpotActive, setIsSpotActive] = useState(false);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null); // Allow null
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    // GSAP animation for fading out the logo on scroll
     gsap.to('#logo', {
       scrollTrigger: {
         trigger: '#about',
@@ -22,42 +22,52 @@ const Hero = () => {
       opacity: 0,
     });
 
-    const handleMouseMove = (e: MouseEvent) => {
-      setCursorPos({ x: e.clientX, y: e.clientY });
-      activateSpotlight();
-    };
-
-    const handleTouchMove = (e: TouchEvent) => {
-      if (e.touches.length > 0) {
-        const touch = e.touches[0];
-        setCursorPos({ x: touch.clientX, y: touch.clientY });
-        activateSpotlight();
-      }
-    };
-
-    const activateSpotlight = () => {
+    const handleInteraction = (x: number, y: number) => {
+      setCursorPos({ x, y });
       setIsSpotActive(true);
-
-      // Clear the existing timeout
+      setHasInteracted(true);
+      
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
-
-      // Start a new timeout
+      
       timeoutRef.current = setTimeout(() => {
         setIsSpotActive(false);
       }, 5000);
     };
 
-    // Add event listeners for both mouse and touch events
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('touchmove', handleTouchMove);
+    // Mouse event handler
+    const handleMouseMove = (e: MouseEvent) => {
+      handleInteraction(e.clientX, e.clientY);
+    };
 
+    // Touch event handler
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        e.preventDefault();
+        const touch = e.touches[0];
+        handleInteraction(touch.clientX, touch.clientY);
+      }
+    };
+
+    const handleTouchStart = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        const touch = e.touches[0];
+        handleInteraction(touch.clientX, touch.clientY);
+      }
+    };
+
+    // Add all event listeners
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    window.addEventListener('touchstart', handleTouchStart);
+
+    // Cleanup
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('touchmove', handleTouchMove);
-
-      // Cleanup the timeout on unmount
+      window.removeEventListener('touchstart', handleTouchStart);
+      
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
@@ -66,7 +76,6 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen bg-black overflow-hidden">
-      {/* Background Image */}
       <div
         className={`absolute inset-0 z-0 transition-opacity duration-500 ${hasInteracted ? 'opacity-100' : 'opacity-0'}`}
         style={{
@@ -75,8 +84,7 @@ const Hero = () => {
           backgroundPosition: 'center',
         }}
       />
-
-      {/* Spotlight Effect */}
+     
       <div
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
@@ -89,8 +97,6 @@ const Hero = () => {
           backdropFilter: 'brightness(1.5)',
         }}
       />
-
-      {/* Hero Content */}
       <div
         id="hero"
         className="relative z-20 container h-screen flex items-center justify-center"
@@ -112,9 +118,7 @@ const Hero = () => {
           </span>
         </div>
       </div>
-
-      {/* Decorative Mask */}
-      <div className="mock md:hidden lg:block absolute -bottom-10 md:-bottom-40 xl:-bottom-40 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]" />
+      <div className='mock md:hidden lg:block absolute -bottom-10 md:-bottom-40 xl:-bottom-40 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]' />
     </section>
   );
 };
