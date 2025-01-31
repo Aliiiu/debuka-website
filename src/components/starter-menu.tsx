@@ -26,7 +26,7 @@ const StarterMenu = () => {
 									className = 'object-cover'
 								/>
 							</div>
-							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-semibold text-sm'>
+							<span className=' md:text-lg text-center xl:text-2xl mt-5 font-dms-serif'>
 								
 								Infused Poultry
 							</span>
