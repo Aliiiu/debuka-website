@@ -65,12 +65,12 @@ const Footer = () => {
 							fill='#C6FFD7'
 						/>
 					</svg>
-					<span className='text-[#5F738C] group-hover:underline'>
+					<span className='text-[#5F738C] group-hover:underline font-swis'>
 						Instagram
 					</span>
 				</Link>
 				<div className='flex flex-col text-white items-start md:flex-row md:items-center gap-2'>
-					<span className='text-sm'>Sign up to our mailing list</span>
+					<span className='text-sm font-swis'>Sign up to our mailing list</span>
 					<form
 						ref={formRef}
 						onSubmit={onSubmitHandler}
@@ -81,14 +81,14 @@ const Footer = () => {
 						<input
 							type='email'
 							name='user_email'
-							className='bg-transparent outline-none text-sm text-white min-w-[228px] flex-1'
+							className='bg-transparent outline-none text-sm text-white min-w-[228px] flex-1 font-swis'
 							placeholder='Your email here'
 						/>
 						<input
 							type='text'
 							name='message'
 							defaultValue='Invite me to the physical launch party!'
-							className='py-3 px-2 border border-grey-200 text-body-alt outline-none rounded-lg'
+							className='py-3 px-2 border border-grey-200 text-body-alt outline-none rounded-lg font-swis'
 							hidden
 						/>
 						<button
@@ -101,7 +101,7 @@ const Footer = () => {
 					</form>
 				</div>
 			</div>
-			<div className='flex flex-col md:flex-row gap-2 justify-between text-sm md:text-base border-t text-body-alt border-grey-900 py-[30px]'>
+			<div className='flex flex-col md:flex-row gap-2 justify-between text-sm md:text-base border-t text-body-alt border-grey-900 py-[30px] font-swis'>
 				<span>Copyright {new Date().getFullYear()} | All rights reserved</span>
 				<div className='flex items-center gap-8'>
 					<Link

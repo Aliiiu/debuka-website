@@ -21,13 +21,13 @@ const MenuDrawer = React.forwardRef<HTMLDivElement, MenuDrawerProps>(
 						<Close />
 					</button>
 					<div className='h-full flex justify-center items-center'>
-						<div className=' flex justify-center -mt-10 text-white gap-4 flex-col font-dms-serif text-2xl md:text-4xl font-bold items-center'>
+						<div className=' flex justify-center -mt-10 text-white gap-4 flex-col font-dms-serif text-2xl md:text-4xl font-bold items-center font-swis'>
 							{pathname === '/'
 								? homeMenu.map((item) => (
 										<Link
 											key={item.id}
 											href={item.href}
-											className='hover:underline capitalize transition-all delay-300'
+											className='hover:underline capitalize transition-all delay-300 font-swis'
 											onClick={() => closeMenu()}
 										>
 											{item.id}
@@ -37,7 +37,7 @@ const MenuDrawer = React.forwardRef<HTMLDivElement, MenuDrawerProps>(
 										<Link
 											key={item.id}
 											href={item.href}
-											className='hover:underline capitalize transition-all delay-300'
+											className='hover:underline capitalize transition-all delay-300 font-swis'
 											onClick={() => closeMenu()}
 										>
 											{item.id}
