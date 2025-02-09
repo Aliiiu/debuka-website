@@ -1,6 +1,3 @@
-import ScrollButton from './button';
-
-
 const About = () => {
 	return (
 	        
