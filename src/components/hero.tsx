@@ -73,4 +73,5 @@ const Hero: React.FC = React.memo(() => {
 	);
 });
 
+Hero.displayName = 'Hero';
 export default Hero;
