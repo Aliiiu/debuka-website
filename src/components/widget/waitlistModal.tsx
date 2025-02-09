@@ -50,7 +50,7 @@ const WaitlistModal = () => {
 		<>
 			<button
 				onClick={openModal}
-				className='text-primary-light text-sm md:text-base cursor-pointer hover:underline'
+				className='text-primary-light text-sm md:text-base cursor-pointer hover:underline font-swis'
 			>
 				Join the Party
 			</button>
