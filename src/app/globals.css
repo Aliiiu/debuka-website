@@ -6,14 +6,7 @@
 
 :root {
 	--foreground-rgb: '#5F738C';
-	--font-dms-serif-display: 'Swis721 BT','DM Serif Display', serif;
-}
-
-@font-face {
-  font-family: 'Swis721 BT';
-  src: url('/fonts/Swiss721BT.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	--font-dms-serif-display: 'DM Serif Display', serif;
 }
 
 @layer components {
@@ -50,7 +43,7 @@
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Swis721 BT';
+	scroll-behavior: smooth;
 }
 /*
   5. Improve media defaults

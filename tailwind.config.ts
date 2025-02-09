@@ -9,7 +9,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				swis: ['Swis721 BT','dms-serif': 'var(--font-dms-serif-display)'],
+				'dms-serif': 'var(--font-dms-serif-display)',
 			},
 			colors: {
 				'primary-light': '#C6FFD7',
