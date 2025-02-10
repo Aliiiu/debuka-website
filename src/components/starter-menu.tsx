@@ -13,7 +13,7 @@ interface MenuItemProps {
 
 const menuItems = [
 	{
-		imageSrc: "/images/food-1.webp",
+		imageSrc: "/images/red-tilapia.webp",
 		width: 393,
 		height: 490,
 		title: "Red Tilapia",
@@ -22,7 +22,7 @@ const menuItems = [
 		price: "C$35",
 	},
 	{
-		imageSrc: "/images/food-2.webp",
+		imageSrc: "/images/infused-poultry.webp",
 		width: 386,
 		height: 490,
 		title: "Infused Poultry",
@@ -31,7 +31,7 @@ const menuItems = [
 			"Carefully tenderized chicken or turkey thigh infused with herbs, vegetables and fruits, and served with signature buka stew and a choice side: accordion roasted yam, flavoured jollof rice or stuffed plantain.",
 	},
 	{
-		imageSrc: "/images/food-2.webp",
+		imageSrc: "/images/orisirisi.webp",
 		width: 386,
 		height: 490,
 		title: "Orisirisi Platter",
@@ -45,17 +45,12 @@ const StarterMenu = () => {
 	return (
 		<section id="our-dishes" className="bg-grey-100">
 			<div className="container px-5 md:px-10 xl:px-0 py-[90px] md:pt-[93px] md:pb-[170px] flex flex-col items-center">
-				<div className="text-center max-w-[558px]">
-					<h2 className="text-primary-dark text-4xl font-dms-serif">
-						Starter Menu
-					</h2>
-					<p className="mt-5 text-sm md:text-base text-body-alt text-center">
-						While we are working on the official physical launch later in the
-						year, we are opening access to our starter menu from $35:
-					</p>
-				</div>
-				<AppCarousel classNames="max-w-full lg:max-w-[1063px]">
-					<div className="flex mt-7 md:mt-24">
+				<AppCarousel
+					classNames="max-w-full lg:max-w-[1063px]"
+					autoplay={false}
+					showArrows={true}
+				>
+					<div className="flex mt-4">
 						{menuItems.map((item) => (
 							<MenuItem key={crypto.randomUUID()} {...item} />
 						))}
@@ -76,18 +71,17 @@ const MenuItem = ({
 	price,
 	description,
 }: MenuItemProps) => (
-	<div className="min-w-0 flex-[0_0_100%] bg-white py-10 xl:px-10 flex flex-col items-center rounded-[20px] group relative">
-		<div className="w-[227px] xl:w-[393px] md:h-[346px] xl:h-[490px]">
+	<div className="min-w-0 flex-[0_0_100%] group relative">
+		<div className="w-[227px] xl:w-[1063px] rounded-xl md:h-[346px] xl:h-[700px] relative">
 			<Image
 				src={imageSrc}
 				alt={title}
-				width={width}
-				height={height}
-				className="object-contain h-auto max-w-full"
+				fill
+				className="object-contain max-w-full"
 			/>
 		</div>
 		<section className="absolute bottom-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-			<div className="bg-[#131313]/20 backdrop-blur-[50] flex flex-col gap-6 w-full p-6">
+			<div className="bg-[#131313]/20 backdrop-blur-2xl rounded-br-xl rounded-bl-xl flex flex-col gap-6 w-full p-6">
 				<div className="flex flex-col gap-2">
 					<h2 className="text-white md:text-2xl font-semibold font-dms-serif">
 						{title}
