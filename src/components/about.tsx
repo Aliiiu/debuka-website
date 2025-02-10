@@ -6,9 +6,7 @@ const About = () => {
 					<div className='max-w-[708px] text-white text-center'>
 						<h2 className='text-3xl md:text-4xl font-dms-serif about'>About</h2>
 						<p className='mt-5 text-grey-200 text-sm md:text-base font-light'>
-							deBuka is a fine-dining company that aims to elevate 
-							people from all cultures by creating unparalleled
-							dining experiences with innovative Nigerian cuisines.
+							deBuka is a dining company that creates its own Nigerian cuisines by 											 using deBuka-made spices and food produce that are prepared in their original natural form without any form of off-the-shelf spices.
 						</p>
 					</div>
 				</div>
