@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import ArrowDownIcon from "@/assets/icons/arrow-down";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,6 +52,7 @@ const Hero = () => {
 				className="bg-primary-light/10 z-10 absolute bottom-20 left-1/2 -translate-x-1/2 px-6 py-3 rounded-lg font-semibold cursor-pointer font-sans text-white"
 			>
 				<span>Order Now</span>
+				<ArrowDownIcon className="inline-block ml-2" />
 			</Link>
 			<div className="mock md:hidden lg:block absolute -bottom-10 md:-bottom-40 xl:-bottom-40 w-full bg-masked-full-base md:bg-masked-full bg-no-repeat bg-center bg-contain h-[190px] md:h-[400px] xl:h-[680px]" />
 		</section>

@@ -46,7 +46,7 @@ const StarterMenu = () => {
 		<section id="our-dishes" className="bg-grey-100">
 			<div className="container px-5 md:px-10 xl:px-0 py-[90px] md:pt-[93px] md:pb-[170px] flex flex-col items-center">
 				<AppCarousel
-					classNames="max-w-full lg:max-w-[1063px]"
+					classNames="max-w-[350px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[1063px]"
 					autoplay={false}
 					showArrows={true}
 				>
@@ -72,13 +72,8 @@ const MenuItem = ({
 	description,
 }: MenuItemProps) => (
 	<div className="min-w-0 flex-[0_0_100%] group relative">
-		<div className="w-[227px] xl:w-[1063px] rounded-xl md:h-[346px] xl:h-[700px] relative">
-			<Image
-				src={imageSrc}
-				alt={title}
-				fill
-				className="object-contain max-w-full"
-			/>
+		<div className="w-[350px] h-[250px] md:w-[700px] xl:w-[1063px] rounded-xl md:h-[446px] xl:h-[700px] relative">
+			<Image src={imageSrc} alt={title} fill className="object-contain" />
 		</div>
 		<section className="absolute bottom-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
 			<div className="bg-[#131313]/20 backdrop-blur-2xl rounded-br-xl rounded-bl-xl flex flex-col gap-6 w-full p-6">
@@ -97,5 +92,19 @@ const MenuItem = ({
 				</Link>
 			</div>
 		</section>
+
+		<div className="lg:hidden flex flex-col gap-2 w-full md:p-2">
+			<div className="flex flex-col gap-1">
+				<h2 className="text-xl font-semibold font-dms-serif">{title}</h2>
+				<span className="font-semibold text-primary">{price}</span>
+				<p className="text-sm">{description}</p>
+			</div>
+			<Link
+				href={"whatsapp://send?phone=+2340000000000"}
+				className="bg-primary w-fit text-white px-4 py-2 rounded-lg"
+			>
+				Order Now
+			</Link>
+		</div>
 	</div>
 );

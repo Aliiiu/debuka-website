@@ -1,5 +1,7 @@
 "use client";
 
+import ArrowLeft from "@/assets/icons/arrow-left";
+import ArrowRight from "@/assets/icons/arrow-right";
 import { cn } from "@/lib/utils";
 import type { EmblaCarouselType } from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
@@ -98,7 +100,7 @@ const AppCarousel = ({
 		};
 	}, [emblaApi, onInit, onSelect]);
 	return (
-		<div className={cn("max-w-[500px] mx-auto", classNames)}>
+		<div className={cn("mx-auto", classNames)}>
 			{data && (
 				<div className="overflow-auto pb-2">
 					<div className="w-fit mx-auto flex touch-manipulation gap-[6px] justify-center md:gap-3 items-center">
@@ -119,9 +121,9 @@ const AppCarousel = ({
 				</div>
 			)}
 			{showArrows && (
-				<div className="flex items-end justify-between">
+				<div className="flex flex-col md:flex-row items-end justify-between">
 					<div className="flex flex-col gap-4">
-						<h2 className="text-primary-dark text-4xl font-dms-serif">
+						<h2 className="text-primary-dark text-3xl md:text-4xl font-dms-serif">
 							Starter Menu
 						</h2>
 						<p className="text-sm md:text-base max-w-[558px] text-body-alt">
@@ -129,7 +131,7 @@ const AppCarousel = ({
 							year, we are opening access to our starter menu from $35:
 						</p>
 					</div>
-					<div className="flex items-center justify-end gap-2  mt-7 md:mt-24">
+					<div className="flex items-center justify-end gap-2  mt-3 md:mt-24">
 						<button
 							type="button"
 							onClick={() => {
@@ -137,48 +139,20 @@ const AppCarousel = ({
 							}}
 							disabled={!canScrollPrev}
 							className={cn(
-								"w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed",
+								"md:w-10 md:h-10 w-7 h-7 rounded-full bg-white shadow-md flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed",
 							)}
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								strokeWidth={1.5}
-								stroke="currentColor"
-								className="w-6 h-6"
-							>
-								<title>Prev Icon</title>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									d="M15.75 19.5L8.25 12l7.5-7.5"
-								/>
-							</svg>
+							<ArrowLeft className="w-4 h-4 md:w-6 md:h-6" />
 						</button>
 						<button
 							type="button"
 							onClick={scrollNext}
 							disabled={!canScrollNext}
 							className={cn(
-								"w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed",
+								"md:w-10 md:h-10 w-7 h-7 rounded-full bg-white shadow-md flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed",
 							)}
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								strokeWidth={1.5}
-								stroke="currentColor"
-								className="w-6 h-6"
-							>
-								<title>Next Icon</title>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									d="M8.25 4.5l7.5 7.5-7.5 7.5"
-								/>
-							</svg>
+							<ArrowRight className="w-4 h-4 md:w-6 md:h-6" />
 						</button>
 					</div>
 				</div>
