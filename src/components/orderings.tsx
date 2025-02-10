@@ -16,14 +16,18 @@ const Orderings = () => {
 						</h2>
 						<div className="flex flex-col mt-5 gap-4">
 							<span className="text-body-alt">
-								Tentatively, orders can be placed by dialling
+								Tentatively, orders can be placed by simply clicking the button
+								below
 							</span>
 							<Link
-								href={"tel:+23400 0000 0000"}
+								href={
+									"https://wa.me/13067150398?text=Hello! I would like to place an order."
+								}
+								target="_blank"
+								rel="noopener noreferrer"
 								className="py-2 px-3 rounded-full flex items-center gap-2 bg-primary w-fit text-xs text-white"
 							>
-								<Call />
-								<span>Call: 00 0000 0000</span>
+								Order now
 							</Link>
 							<p className="text-body-alt text-sm max-w-[378px]">
 								Delivery fee is free for the first order and a fee of $10 will

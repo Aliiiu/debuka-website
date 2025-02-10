@@ -16,16 +16,16 @@ export default function ArrowDownIcon({
 			<path
 				d="M10.5 3.625V17.375"
 				stroke="white"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
+				strokeWidth="2"
+				strokeLinecap="round"
+				strokeLinejoin="round"
 			/>
 			<path
 				d="M4.875 11.75L10.5 17.375L16.125 11.75"
 				stroke="white"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
+				strokeWidth="2"
+				strokeLinecap="round"
+				strokeLinejoin="round"
 			/>
 		</svg>
 	);
