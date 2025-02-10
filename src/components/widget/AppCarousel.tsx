@@ -15,7 +15,7 @@ const AppCarousel = ({
 	showArrows,
 	autoplay = true,
 }: {
-	data?: any;
+	data?: { title: string }[];
 	children: ReactNode;
 	classNames?: string;
 	showArrows?: boolean;

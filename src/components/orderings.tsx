@@ -1,4 +1,3 @@
-import Call from "@/assets/icons/call";
 import Check from "@/assets/icons/check";
 import Link from "next/link";
 
