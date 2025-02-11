@@ -85,7 +85,9 @@ const MenuItem = ({
 					<p className="text-grey-100 text-sm">{description}</p>
 				</div>
 				<Link
-					href={"whatsapp://send?phone=+2340000000000"}
+					href={
+						"https://wa.me/13067150398?text=Hello! I would like to place an order."
+					}
 					className="bg-primary w-fit text-white px-4 py-2 rounded-lg"
 				>
 					Order Now
