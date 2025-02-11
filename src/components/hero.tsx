@@ -11,6 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
 	useEffect(() => {
+		// Clear URL fragment on component mount
+		if (window.location.hash) {
+			window.history.replaceState(null, "", window.location.pathname);
+		}
+
 		gsap.to("#logo", {
 			scrollTrigger: {
 				trigger: "#about",
