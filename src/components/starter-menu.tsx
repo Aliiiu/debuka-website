@@ -75,7 +75,7 @@ const MenuItem = ({
 		<div className="w-[350px] h-[250px] md:w-[700px] xl:w-[1063px] rounded-xl md:h-[446px] xl:h-[700px] relative">
 			<Image src={imageSrc} alt={title} fill className="object-contain" />
 		</div>
-		<section className="hidden lg:absolute bottom-0 w-full lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300">
+		<section className="hidden lg:block lg:absolute bottom-0 w-full lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300">
 			<div className="bg-[#131313]/20 backdrop-blur-2xl rounded-br-xl rounded-bl-xl flex flex-col gap-6 w-full p-6">
 				<div className="flex flex-col gap-2">
 					<h2 className="text-white md:text-2xl font-semibold font-dms-serif">
