@@ -94,7 +94,7 @@ const Footer = () => {
 				<span>Copyright {new Date().getFullYear()} | All rights reserved</span>
 				<div className="flex items-center gap-8">
 					<Link href={"/faq"} className="hover:underline hover:text-white">
-						faq
+						FAQs
 					</Link>
 					<Link
 						href={"/terms-and-condition"}
