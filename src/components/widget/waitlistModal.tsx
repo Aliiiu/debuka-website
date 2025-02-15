@@ -26,8 +26,6 @@ const WaitlistModal = () => {
 
 		const form = event.currentTarget;
 
-		console.log(formRef.current);
-
 		emailjs
 			.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current || "", {
 				publicKey: PUBLIC_KEY,
