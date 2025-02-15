@@ -10,11 +10,11 @@ const Orderings = () => {
 			<div className="flex flex-col py-16 items-center justify-center">
 				<div className="flex flex-col gap-10 px-10">
 					<div>
-						<h2 className="text-3xl xl:text-4xl text-primary-dark font-dms-serif">
+						<h2 className="text-3xl xl:text-4xl font-semibold text-primary-dark font-dms-serif">
 							Orderings
 						</h2>
 						<div className="flex flex-col mt-5 gap-4">
-							<span className="text-body-alt">
+							<span className="text-body-alt max-w-[420px]">
 								Tentatively, orders can be placed by simply clicking the button
 								below
 							</span>
@@ -24,7 +24,7 @@ const Orderings = () => {
 								}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="py-2 px-3 rounded-full flex items-center gap-2 bg-primary w-fit text-xs text-white"
+								className="py-2 px-3 md:px-5 md:py-3 rounded-full flex items-center gap-2 bg-primary w-fit text-xs text-white"
 							>
 								Order now
 							</Link>
@@ -32,43 +32,6 @@ const Orderings = () => {
 								Delivery fee is free for the first order and a fee of $10 will
 								be charged for subsequent orders.
 							</p>
-						</div>
-					</div>
-					<div>
-						<h3 className="text-primary font-semibold text-sm">
-							Ordering Hours:
-						</h3>
-						<div className="flex items-center mt-2 gap-2">
-							<Check />
-							<span className="text-sm">Saturday: 12:00pm - 11:00pm</span>
-						</div>
-						<div className="flex items-center mt-[6px] gap-2">
-							<Check />
-							<span className="text-sm">Sunday: 1:00pm - 10:00pm</span>
-						</div>
-					</div>
-					<div>
-						<h3 className="text-primary font-semibold text-sm">
-							Areas orders can be placed from:
-						</h3>
-						<div className="flex items-center mt-2 gap-2">
-							<Check />
-							<span className="text-sm max-w-[349px]">
-								Hamilton (and cities within including Stoney Creek, Hannon,
-								Ancaster, Waterdown and others)
-							</span>
-						</div>
-						<div className="flex items-center mt-[6px] gap-2">
-							<Check />
-							<span className="text-sm">Binbrook</span>
-						</div>
-						<div className="flex items-center mt-[6px] gap-2">
-							<Check />
-							<span className="text-sm">Burlington</span>
-						</div>
-						<div className="flex items-center mt-[6px] gap-2">
-							<Check />
-							<span className="text-sm">Oakville</span>
 						</div>
 					</div>
 				</div>
