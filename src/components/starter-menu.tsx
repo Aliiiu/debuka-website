@@ -16,7 +16,7 @@ const menuItems = [
 		imageSrc: "/images/red-tilapia.webp",
 		width: 393,
 		height: 490,
-		title: "Red Tilapia",
+		title: "Leaf-twined Red Tilapia",
 		description:
 			"Lemon-washed red tilapia glazed with grounded peppered dried fish, herbs and citrus, and served with signature buka stew and a choice side: accordion roasted yam, flavoured jollof rice or stuffed plantain.",
 		price: "C$35",
