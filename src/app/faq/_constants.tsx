@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const faqData = [
 	{
 		title: "What is deBuka?",
@@ -14,8 +16,21 @@ export const faqData = [
 	},
 	{
 		title: "How do I place an order?",
-		content:
-			"Orders can be placed by dialing +1 306-715-0398 or through WhatsApp using the line +1 306-715-0398.",
+		content: (
+			<span>
+				Orders can be placed by clicking on this{" "}
+				<Link
+					href={
+						"https://wa.me/13067150398?text=Hello! I would like to place an order."
+					}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="underline font-medium"
+				>
+					link
+				</Link>
+			</span>
+		),
 	},
 	{
 		title: "What areas do you deliver to?",
