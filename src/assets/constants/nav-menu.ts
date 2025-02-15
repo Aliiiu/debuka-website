@@ -1,37 +1,41 @@
 export const homeMenu = [
 	{
-		href: '#about',
-		id: 'about',
+		href: "#about",
+		id: "about",
 	},
 	{
-		href: '#our-dishes',
-		id: 'Starters',
+		href: "#our-dishes",
+		id: "Starters",
 	},
 	{
-		href: '#reservations',
-		id: 'Orderings',
+		href: "#reservations",
+		id: "Orderings",
 	},
 	{
-		href: '#our-promises',
-		id: 'Promises',
+		href: "#our-promises",
+		id: "Promises",
 	},
 	{
-		href: '#values',
-		id: 'Values',
+		href: "#values",
+		id: "Values",
 	},
 ];
 
 export const altMenu = [
 	{
-		href: '/',
-		id: 'Home',
+		href: "/",
+		id: "Home",
 	},
 	{
-		href: '/privacy',
-		id: 'Privacy',
+		href: "/faq",
+		id: "FAQ",
 	},
 	{
-		href: '/terms-and-condition',
-		id: 'Terms and Condition',
+		href: "/privacy",
+		id: "Privacy",
+	},
+	{
+		href: "/terms-and-condition",
+		id: "Terms and Condition",
 	},
 ];
