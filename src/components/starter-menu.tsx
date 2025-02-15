@@ -16,17 +16,17 @@ const menuItems = [
 		imageSrc: "/images/red-tilapia.webp",
 		width: 393,
 		height: 490,
-		title: "Leaf-twined Red Tilapia",
+		title: "Leaf-Twined Tilapia",
 		description:
-			"Lemon-washed red tilapia glazed with grounded peppered dried fish, herbs and citrus, and served with signature buka stew and a choice side: accordion roasted yam, flavoured jollof rice or stuffed plantain.",
-		price: "C$35",
+			"Lemon-washed red Tilapia glazed with grounded peppered dried fish, herbs and citrus, and served with signature buka stew and a choice side: accordion roasted yam, flavoured jollof rice or stuffed plantain.",
+		price: "C$50",
 	},
 	{
 		imageSrc: "/images/infused-poultry.webp",
 		width: 386,
 		height: 490,
 		title: "Infused Poultry",
-		price: "C$35",
+		price: "C$50",
 		description:
 			"Carefully tenderized chicken or turkey thigh infused with herbs, vegetables and fruits, and served with signature buka stew and a choice side: accordion roasted yam, flavoured jollof rice or stuffed plantain.",
 	},
@@ -35,7 +35,7 @@ const menuItems = [
 		width: 386,
 		height: 490,
 		title: "Orisirisi Platter",
-		price: "C$35",
+		price: "C$300",
 		description:
 			"Intentionally-packaged platter box containing red tilapia(x2), infused poultry(x2 of chicken & turkey thighs), accordion roasted yam, flavoured jollof rice, stuffed plantain and signature buka stew.",
 	},
