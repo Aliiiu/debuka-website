@@ -22,6 +22,7 @@ const config: Config = {
 				"grey-800": "#313C49",
 				"grey-900": "#1F2126",
 				"body-alt": "#5F738C",
+				muted: "#FBFBFB",
 				brand: "#398DFA",
 				header: "#313C49",
 			},
