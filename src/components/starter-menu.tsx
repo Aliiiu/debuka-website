@@ -63,14 +63,7 @@ const StarterMenu = () => {
 
 export default StarterMenu;
 
-const MenuItem = ({
-	imageSrc,
-	width,
-	height,
-	title,
-	price,
-	description,
-}: MenuItemProps) => (
+const MenuItem = ({ imageSrc, title, price, description }: MenuItemProps) => (
 	<div className="min-w-0 flex-[0_0_100%] group relative">
 		<div className="w-[350px] h-[250px] md:w-[700px] xl:w-[1063px] rounded-xl md:h-[446px] xl:h-[700px] relative">
 			<Image src={imageSrc} alt={title} fill className="object-contain" />
