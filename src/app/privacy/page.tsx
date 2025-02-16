@@ -5,6 +5,29 @@ export default function PrivacyPage() {
 		<main className='flex min-h-screen flex-col items-center bg-grey-100'>
 			<AltPageHeader title='Privacy' />
 			<div className='container flex flex-col md:flex-row gap-10 py-10 md:py-14'>
+				<div className='max-w-[185px] hidden md:block'>
+					<h2>Terms of use</h2>
+					<ul className='text-body-alt pt-2 list-inside'>
+						<li className='px-4 py-2 cursor-pointer hover:underline'>
+							Interpretation and Definitions
+						</li>
+						<li className='px-4 py-2 cursor-pointer hover:underline'>
+							Collecting and Using Your Personal Data
+						</li>
+						<li className='px-4 py-2 cursor-pointer hover:underline'>
+							Children's Privacy
+						</li>
+						<li className='px-4 py-2 cursor-pointer hover:underline'>
+							Links to Other Websites
+						</li>
+						<li className='px-4 py-2 cursor-pointer hover:underline'>
+							Changes to this Privacy Policy
+						</li>
+						<li className='px-4 py-2 cursor-pointer hover:underline'>
+							Contact Us
+						</li>
+					</ul>
+				</div>
 				<div className='flex-1 flex flex-col gap-10'>
 					<h1>Privacy Policy</h1>
 					<span className='text-brand'>Last updated: February 15, 2025</span>
@@ -211,12 +234,13 @@ export default function PrivacyPage() {
 							<p className='text-sm text-body-alt'>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
 					</section>
 					<section>
-						<p className='text-sm text-body-alt'>If you have any questions about this Privacy Policy, You can contact us:</p>
-						<ul>
-							<li>
-								<p>By email: hello@debuka.com</p>
-							</li>
-						</ul>
+						<h2>Contact Us</h2>
+							<p className='text-sm text-body-alt'>If you have any questions about this Privacy Policy, You can contact us:</p>
+							<ul>
+								<li>
+									<p>By email: hello@debuka.com</p>
+								</li>
+							</ul>
 					</section>
 				</div>
 			</div>
