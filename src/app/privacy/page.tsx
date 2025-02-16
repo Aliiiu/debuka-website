@@ -35,8 +35,8 @@ export default function PrivacyPage() {
 					disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 					<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
 					<section>
-						<h2 className='text-header font-bold text-lg'>Interpretation and Definitions</h2>
-						<h3 className='text-header font-bold text-lg'>Interpretation</h3>
+						<h2 className='text-header font-bold text-lg'>Interpretation and Definitions</h2><br />
+						<h3 className='text-header font-bold text-lg'>Interpretation</h3><br />
 
 						<p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
 						<h3 className='text-header font-bold text-lg'>Definitions</h3>
