@@ -223,7 +223,7 @@ export default function PrivacyPage() {
 							<p className='text-sm text-body-alt'>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
 					</section>
 					<section>
-						h2>Links to Other Websites</h2>
+						<h2>Links to Other Websites</h2>
 							<p className='text-sm text-body-alt'>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
 							<p className='text-sm text-body-alt'>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
 					</section>
