@@ -29,7 +29,7 @@ const Orderings = () => {
 								Order now
 							</Link>
 							<p className="text-body-alt text-sm max-w-[378px]">
-								Delivery fee is free for the first order and a fee of $10 will
+								Delivery fee is free for the first order and a fee will
 								be charged for subsequent orders.
 							</p>
 						</div>
