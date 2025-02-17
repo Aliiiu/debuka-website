@@ -81,6 +81,8 @@ const MenuItem = ({ imageSrc, title, price, description }: MenuItemProps) => (
 					href={
 						"https://wa.me/13067150398?text=Hello! I would like to place an order."
 					}
+					target="_blank"
+					rel="noopener noreferrer"
 					className="bg-primary w-fit text-white px-4 py-2 rounded-lg"
 				>
 					Order Now
