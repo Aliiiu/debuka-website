@@ -45,7 +45,7 @@ export const faqData = [
 	{
 		title: "When can I place an order?",
 		content:
-			"Orders can be placed anytime during the week from Monday – Friday. We only do deliveries on weekends.",
+			"Orders can be placed anytime during the week from Monday – Thursday. We only do deliveries on weekends.",
 	},
 	{
 		title: "Can I pick up my order instead of delivery?",
