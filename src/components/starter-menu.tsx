@@ -18,26 +18,26 @@ const menuItems = [
 		height: 490,
 		title: "Leaf-Twined Tilapia",
 		description:
-			"Lemon-washed red Tilapia glazed with grounded peppered dried fish, herbs and citrus, and served with signature buka stew and a choice side: accordion roasted yam, flavoured jollof rice or stuffed plantain.",
-		price: "C$50",
+			"Lemon-washed, leaf-twined Red Tilapia glazed with grounded dried Ijebu fish, dehydrated peppers, herbs and citrus mixture in overnight herbs-vegetables-infused canola oil, and served with a signature fermented buka stew and a choice side: accordion roasted peppered yam, flavoured jollof rice or peppered plantain varieties (one of :plantain boat stuffed with vegetables & protein, slightly incised plantain or fully-cut skewered plantain).",
+		price: "C$140",
 	},
 	{
 		imageSrc: "/images/infused-poultry.webp",
 		width: 386,
 		height: 490,
 		title: "Infused Poultry",
-		price: "C$50",
+		price: "C$100",
 		description:
-			"Carefully tenderized chicken or turkey thigh infused with herbs, vegetables and fruits, and served with signature buka stew and a choice side: accordion roasted yam, flavoured jollof rice or stuffed plantain.",
+			"Carefully tenderized, steamed & roasted chicken or turkey thigh with herbs, vegetables and fruits and glazed with dehydrated grounded peppers, vegetables, herbs & fruits mixture in overnight herbs-vegetables-infused canola oil and served with a signature fermented buka stew and a choice side: accordion peppered roasted yam, flavoured jollof rice or peppered plantain varieties (one of: plantain boat stuffed with vegetables & blended protein, slightly incised plantain, or fully-cut skewered plantain).",
 	},
 	{
 		imageSrc: "/images/orisirisi.webp",
 		width: 386,
 		height: 490,
 		title: "Orisirisi Platter",
-		price: "C$300",
+		price: "C$450",
 		description:
-			"Intentionally-packaged platter box containing red tilapia(x2), infused poultry(x2 of chicken & turkey thighs), accordion roasted yam, flavoured jollof rice, stuffed plantain and signature buka stew.",
+			"A 17’x13’x6’ platter box containing Red Tilapia (x2), infused chicken and turkey thigh (x1 each or x2 for either), accordion roasted yam (5 pieces), flavoured jollof rice (one 34 oz bowl), signature fermented buka stew and plantain varieties - stuffed plantain boat, plantain kebab and fully-cut skewered plantain.",
 	},
 ];
 
