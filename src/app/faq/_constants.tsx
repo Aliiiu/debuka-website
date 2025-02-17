@@ -4,7 +4,7 @@ export const faqData = [
 	{
 		title: "What is deBuka?",
 		content:
-			"deBuka is a dining company and not a restaurant. We believe that dining should not be restrictive.\n\nDining can be experienced anywhere there’s a group of people with a shared bond and connection. Our goal is to spread worth and elevate people with authentic Nigerian cuisines with influences around the world. Although, we are working on opening a restaurant later in the year.",
+			"deBuka is a dining company and not a restaurant. We believe that dining should not be restrictive.\n\nDining can be experienced anywhere there’s a group of people with a shared bond and connection. Our goal is to spread worth and elevate people with authentic Nigerian cuisines with influences from around the world. Although, we are working on opening a restaurant later in the year.",
 	},
 	{
 		title: "Where is deBuka located?",
@@ -35,7 +35,7 @@ export const faqData = [
 	{
 		title: "What areas do you deliver to?",
 		content:
-			"We deliver to areas close to Hamilton including Waterdown, Binbrook, Stoney Creek, Ancaster, Oakville, Burlington, Caledonia among others.",
+			"We deliver to areas close to Hamilton including Waterdown, Binbrook, Stoney Creek, Ancaster, Oakville, Burlington, Paris, Dunnville, Grimsby, Caledonia among others.",
 	},
 	{
 		title: "How much is the delivery fee?",
