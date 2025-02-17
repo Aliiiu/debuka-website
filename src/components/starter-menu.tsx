@@ -28,7 +28,7 @@ const menuItems = [
 		title: "Infused Poultry",
 		price: "C$100",
 		description:
-			"Carefully tenderized, steamed & roasted chicken or turkey thigh with herbs, vegetables and fruits and glazed with dehydrated grounded peppers, vegetables, herbs & fruits mixture in overnight herbs-vegetables-infused-canola-oil and served with a signature fermented buka stew and a choice side: accordion peppered roasted yam, flavoured jollof rice or peppered plantain varieties (one of: plantain boat stuffed with vegetables & blended protein, slightly incised plantain, or fully-cut skewered plantain).",
+			"Carefully tenderized, steamed & roasted chicken or turkey thigh with herbs, vegetables and fruits, and glazed with dehydrated grounded peppers, vegetables, herbs & fruits mixture in overnight herbs-vegetables-infused-canola-oil and served with a signature fermented buka stew and a choice side: accordion peppered roasted yam, flavoured jollof rice or peppered plantain varieties (one of: plantain boat stuffed with vegetables & blended protein, slightly incised plantain, or fully-cut skewered plantain).",
 	},
 	{
 		imageSrc: "/images/orisirisi.webp",
