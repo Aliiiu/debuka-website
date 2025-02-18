@@ -18,7 +18,7 @@ const menuItems = [
 		height: 490,
 		title: "Leaf-Twined Tilapia",
 		description:
-			"Lemon-washed, leaf-twined (beans pudding - moinmoin leaf) Red Tilapia glazed with grounded dried Ijebu fish (from Nigeria), dehydrated peppers, herbs and citrus mixture in overnight herbs-vegetables-infused-canola-oil, and served with a signature fermented buka stew and a choice side: accordion roasted peppered yam, flavoured jollof rice or peppered plantain varieties (one of :plantain boat stuffed with vegetables & protein, slightly incised plantain or fully-cut skewered plantain).",
+			"Leaf-twined red tilapia with Ijebu fish glaze, buka stew, and a choice of yam, jollof, or peppered plantain.",
 		price: "C$140",
 	},
 	{
@@ -28,7 +28,7 @@ const menuItems = [
 		title: "Infused Poultry",
 		price: "C$100",
 		description:
-			"Carefully tenderized, steamed & roasted chicken or turkey thigh with herbs, vegetables and fruits, and glazed with dehydrated grounded peppers, vegetables, herbs & fruits mixture in overnight herbs-vegetables-infused-canola-oil and served with a signature fermented buka stew and a choice side: accordion peppered roasted yam, flavoured jollof rice or peppered plantain varieties (one of: plantain boat stuffed with vegetables & blended protein, slightly incised plantain, or fully-cut skewered plantain).",
+			"Herb-glazed chicken or turkey thigh with buka stew and a choice of yam, jollof, or peppered plantain varieties.",
 	},
 	{
 		imageSrc: "/images/orisirisi.webp",
