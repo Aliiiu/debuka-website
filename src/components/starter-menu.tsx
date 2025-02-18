@@ -37,7 +37,7 @@ const menuItems = [
 		title: "Orisirisi Platter",
 		price: "C$450",
 		description:
-			"A 17’x13’x6’ platter box containing Red Tilapia (x2), infused chicken and turkey thigh (x1 each or x2 for either), accordion roasted yam (5 pieces), flavoured jollof rice (one 34 oz bowl), signature fermented buka stew and plantain varieties - stuffed plantain boat, plantain kebab and fully-cut skewered plantain.",
+			"17”x13”x6” platter with red tilapia, chicken, turkey thigh, roasted yam, jollof rice, buka stew, and assorted plantain varieties.",
 	},
 ];
 
