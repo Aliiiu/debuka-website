@@ -18,8 +18,7 @@ const menuItems = [
 		height: 490,
 		title: "Leaf-Twined Tilapia",
 		description:
-			"Leaf-twined red tilapia with Ijebu fish glaze, served with buka stew.", 
-			"Sides sold separately: yam ($12), jollof rice ($12), or peppered plain/boat plantain ($6/$12).",
+			`Leaf-twined red tilapia with Ijebu fish glaze, served with buka stew.\nSides sold separately: yam ($12), jollof rice ($12), or peppered plain/boat plantain ($6/$12).`,
 		price: "C$70",
 	},
 	{
@@ -29,8 +28,7 @@ const menuItems = [
 		title: "Infused Poultry",
 		price: "C$60",
 		description:
-			"Herb and citrus-glazed chicken or turkey thigh with buka stew.", 
-			"Sides sold separately: yam ($12), jollof rice ($12), or peppered plain/boat plantain ($6/$12).",
+			`Herb and citrus-glazed chicken or turkey thigh served with buka stew."\nSides sold separately: yam ($12), jollof rice ($12), or peppered plain/boat plantain ($6/$12).`,
 	},
 	{
 		imageSrc: "/images/orisirisi.webp",
