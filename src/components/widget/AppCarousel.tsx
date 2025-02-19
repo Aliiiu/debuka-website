@@ -128,7 +128,7 @@ const AppCarousel = ({
 						</h2>
 						<p className="text-sm md:text-base max-w-[558px] text-body-alt">
 							While we are working on the official physical launch later in the
-							year, we are opening access to our starter menu from $100:
+							year, we are opening access to our starter menu from $60:
 						</p>
 					</div>
 					<div className="flex items-center justify-end gap-2  mt-3 md:mt-24">
