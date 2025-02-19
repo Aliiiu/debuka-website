@@ -29,11 +29,67 @@ const Orderings = () => {
 								Order now
 							</Link>
 							<p className="text-body-alt text-sm max-w-[378px]">
-								We currently focus on pre-order and delivery services only.
-								We deliver to areas close to Hamilton including Waterdown, Binbrook, Stoney Creek, Ancaster, Oakville, Burlington, Paris, Dunnville, Grimsby, Caledonia among others.
 								Delivery fee is free for the first order and a fee will
 								be charged for subsequent orders.
 							</p>
+							<div>
+								<h3 className="text-primary font-semibold text-sm">
+									Ordering Days:
+								</h3>
+								<div className="flex items-center mt-2 gap-2">
+									<Check />
+									<span className="text-sm">Mondays - Thursdays</span>
+								</div>
+							</div>
+							<div>
+								<h3 className="text-primary font-semibold text-sm">
+									Delivery Days:
+								</h3>
+								<div className="flex items-center mt-2 gap-2">
+									<Check />
+									<span className="text-sm">Saturdays - Sundays</span>
+								</div>
+							</div>
+							<div>
+								<h3 className="text-primary font-semibold text-sm">
+									Service Areas:
+								</h3>
+								<div className="flex items-center mt-2 gap-2">
+									<Check />
+									<span className="text-sm max-w-[349px]">
+										Hamilton (and cities within including Stoney Creek, Hannon,
+										Ancaster, Waterdown and others)
+									</span>
+								</div>
+								<div className="flex items-center mt-[6px] gap-2">
+									<Check />
+									<span className="text-sm">Binbrook</span>
+								</div>
+								<div className="flex items-center mt-[6px] gap-2">
+									<Check />
+									<span className="text-sm">Burlington</span>
+								</div>
+								<div className="flex items-center mt-[6px] gap-2">
+									<Check />
+									<span className="text-sm">Oakville</span>
+								</div>
+								<div className="flex items-center mt-[6px] gap-2">
+									<Check />
+									<span className="text-sm">Paris</span>
+								</div>
+								<div className="flex items-center mt-[6px] gap-2">
+									<Check />
+									<span className="text-sm">Dunnville</span>
+								</div>
+								<div className="flex items-center mt-[6px] gap-2">
+									<Check />
+									<span className="text-sm">Grimsby</span>
+								</div>
+								<div className="flex items-center mt-[6px] gap-2">
+									<Check />
+									<span className="text-sm">Caledonia</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
