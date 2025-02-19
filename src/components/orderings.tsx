@@ -29,6 +29,8 @@ const Orderings = () => {
 								Order now
 							</Link>
 							<p className="text-body-alt text-sm max-w-[378px]">
+								We currently focus on pre-order and delivery services only.
+								We deliver to areas close to Hamilton including Waterdown, Binbrook, Stoney Creek, Ancaster, Oakville, Burlington, Paris, Dunnville, Grimsby, Caledonia among others.
 								Delivery fee is free for the first order and a fee will
 								be charged for subsequent orders.
 							</p>
