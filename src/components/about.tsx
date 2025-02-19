@@ -6,7 +6,7 @@ const About = () => {
 					<div className='max-w-[708px] text-white text-center'>
 						<h2 className='text-3xl md:text-4xl font-dms-serif about'>About</h2>
 						<p className='mt-5 text-grey-200 text-sm md:text-base font-light'>
-							deBuka creates its own Nigerian cuisines by using deBuka-made spices and food produce that are prepared in their original natural form without any form of off-the-shelf spices.
+							deBuka crafts unique Nigerian cuisines using its own kitchen-made spices and fresh, natural ingredients—completely free from off-the-shelf additives.
 						</p>
 					</div>
 				</div>
