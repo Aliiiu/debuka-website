@@ -128,6 +128,7 @@ const WaitlistModal = () => {
 												<input
 													type="email"
 													name="user_email"
+													required
 													placeholder="youremail@gmail.com"
 													className="py-3 px-2 border border-grey-200 text-body-alt outline-none rounded-lg"
 												/>
